@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+Portfolio Dev - Laboratoire Tech d'Adrien Stiévenart | Développeur & Artiste NumériqueBienvenue dans mon laboratoire ! Ce projet sert de portfolio interactif, conçu pour immerger l'utilisateur dans une ambiance de garage/laboratoire de haute technologie, inspirée de l'interface utilisateur de Tony Stark (Iron Man). Chaque projet est présenté sur un écran holographique, transformant la navigation en une expérience futuriste.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🌟Fonctionnalités Clés
+Immersion Futuriste : Une interface utilisateur inspirée de la science-fiction avec des éléments holographiques (Cyan Neon).
+Design Responsive : Le laboratoire s'adapte à toutes les tailles d'écran (mobile, tablette, desktop).
+Composants Réutilisables : Chaque écran, barre d'XP, et bouton est construit comme un composant React réutilisable.
+Navigation Intuitive : Des boutons "Voir les Projets" et "Contacter" pour une expérience utilisateur claire.
+Design Épuré : Image de fond fixe avec effet de parallaxe minimal pour une concentration maximale sur le contenu.
 
-## Available Scripts
+🛠️ Stack TechniqueCe projet a été développé en utilisant les technologies suivantes 
+ReactFramework principal pour la gestion des composants et de l'état.
+Styling CSS3Styles personnalisés, animations, backdrop-filter pour l'effet hologramme.Animation
+CSS KeyframesAnimations des bordures néon, des barres de progression et des micro-interactions.
+Langage JavaScript (ES6+)Logique du frontend et interactivité.
 
-In the project directory, you can run:
+🏗️ Structure du Projet
+(Hologramme en vedette)Le cœur de ce portfolio repose sur la modularité des composants pour créer une expérience complète :
+src/components/HomeHologram/ : Le composant principal de l'écran d'accueil avec vos informations
+.src/components/ProjectScreen/ : (À venir) Composant pour afficher les détails d'un projet sur un écran holographique
+.src/App.js : Conteneur principal gérant l'état et la navigation entre les différents écrans holographiques
+.public/ : Contient l'image de fond fixe (background.png) et la photo de profil (profile-adrien.jpg).
 
-### `npm start`
+⚙️ Installation et Démarrage LocalSuivez ces étapes pour cloner le projet et l'exécuter sur votre machine locale.
+Cloner le dépôt :Bashgit clone 
+cd nom-du-repo
+Installer les dépendances :Bashnpm install
+# ou
+yarn install
+Lancer l'application en mode développement :Bashnpm start
+# ou
+yarn start
+L'application sera accessible dans votre navigateur à l'adresse http://localhost:3000.
+🔜 Prochaines Évolutions (Futur Plan)Animations de Transition 3D : Mise en œuvre de librairies comme React Spring ou Framer Motion pour des effets de zoom et de rotation lors de la sélection d'un projet.Interface J.A.R.V.I.S. : Ajout de légers sons d'interface utilisateur pour renforcer l'immersion.Gestion de l'État : Utilisation de React Router pour une gestion propre des URL de chaque projet.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+✉️ ContactN'hésitez pas à me contacter pour toute opportunité de collaboration ou pour échanger sur le développement
