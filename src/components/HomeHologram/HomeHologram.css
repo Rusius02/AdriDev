@@ -1,0 +1,294 @@
+/* Variables pour les couleurs */
+:root {
+  --hologram-color: #00e0ff; /* Bleu Cyan */
+  --hologram-shadow: 0 0 15px var(--hologram-color), inset 0 0 15px var(--hologram-color);
+  --bg-dark: rgba(0, 5, 20, 0.75); /* Fond très sombre et semi-transparent */
+}
+
+/* -------------------- Conteneur Principal -------------------- */
+.hologram-container {
+  width: 90%; /* Prend une bonne largeur sur l'écran */
+  max-width: 1200px; /* Limite la taille sur très grands écrans */
+  margin: 5vh auto;
+  perspective: 1000px; /* Ajout d'une perspective pour l'effet 3D */
+}
+
+.hologram-border {
+  /* Effet de fond hologramme (transparent/flou) */
+  background: var(--bg-dark);
+  backdrop-filter: blur(5px); /* IMPORTANT pour l'effet de verre dépoli */
+  border: 1px solid var(--hologram-color);
+  box-shadow: var(--hologram-shadow);
+  padding: 20px;
+  
+  /* Effet de grille abstraite en fond */
+  background-image: linear-gradient(0deg, transparent 24%, rgba(0, 0, 0, 0.05) 25%, rgba(0, 0, 0, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 0, 0, 0.05) 75%, rgba(0, 0, 0, 0.05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(0, 0, 0, 0.05) 25%, rgba(0, 0, 0, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 0, 0, 0.05) 75%, rgba(0, 0, 0, 0.05) 76%, transparent 77%, transparent);
+  background-size: 30px 30px; /* Taille des carrés de la grille */
+
+  /* Animation subtile des bords */
+  animation: border-glow 3s infinite alternate;
+}
+
+@keyframes border-glow {
+  from {
+    box-shadow: 0 0 10px var(--hologram-color), inset 0 0 10px var(--hologram-color);
+  }
+  to {
+    box-shadow: 0 0 20px var(--hologram-color), inset 0 0 20px var(--hologram-color);
+  }
+}
+
+.hologram-content {
+  color: #fff; /* Couleur du texte par défaut */
+  padding: 15px;
+  line-height: 1.6;
+}
+
+/* -------------------- Typographie -------------------- */
+.main-title {
+    /* ... (garder les styles existants) ... */
+    margin-bottom: 5px; /* Réduire la marge sous le titre principal si nécessaire */
+    font-size: 3em; /* Peut-être réduire un peu pour compenser la largeur ajoutée par l'image */
+    letter-spacing: 3px;
+    padding-bottom: 5px; /* Espacement sous le trait */
+}
+
+.titles-block {
+    /* Ne plus centrer si on veut que le texte soit à gauche */
+    justify-content: flex-start; /* Aligne les slogans à gauche */
+    gap: 15px; /* Réduire l'espace entre les slogans si souhaité */
+    flex-wrap: wrap; /* Pour que les slogans puissent passer à la ligne si l'espace est limité */
+}
+
+.subtitle {
+    font-size: 1.1em; /* Ajuster la taille des slogans si besoin */
+}
+
+h3 {
+  color: var(--hologram-color);
+  margin-top: 20px;
+  border-left: 3px solid var(--hologram-color);
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+
+/* -------------------- Structure et Image -------------------- */
+.header-section {
+    /* Nouvelle disposition: flexbox pour aligner l'image et le texte côte à côte */
+    display: flex;
+    flex-direction: row; /* Aligne les éléments horizontalement */
+    align-items: flex-start; /* Alignera l'image et les titres en haut */
+    justify-content: center; /* Centre le bloc entier horizontalement */
+    gap: 40px; /* Espace entre la photo et les textes */
+    margin-bottom: 40px; /* Ajoute un peu plus d'espace sous le header */
+}
+.profile-image-container {
+    /* Conservez les styles existants */
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-shrink: 0;
+    align-self: center;
+
+    /* NOUVEAUX STYLES POUR L'EFFET NÉON */
+    border: 3px solid var(--hologram-color); /* Bordure colorée */
+    box-shadow: 
+        0 0 10px var(--hologram-color),   /* Ombre extérieure plus douce */
+        0 0 20px var(--hologram-color),   /* Ombre extérieure plus forte */
+        inset 0 0 15px var(--hologram-color); /* Ombre intérieure pour un halo */
+    
+    background-color: #000; /* Fond noir pour que le néon ressorte bien */
+    padding: 5px; /* Pour donner un peu d'espace entre l'image et le néon */
+
+    /* Animation subtile pour le néon (optionnel, mais ajoute du dynamisme) */
+    animation: neon-glow 2s infinite alternate ease-in-out;
+}
+
+/* Keyframes pour l'animation du néon */
+@keyframes neon-glow {
+  from {
+    box-shadow: 
+      0 0 8px var(--hologram-color),
+      0 0 15px var(--hologram-color),
+      inset 0 0 10px var(--hologram-color);
+  }
+  to {
+    box-shadow: 
+      0 0 15px var(--hologram-color),
+      0 0 30px var(--hologram-color),
+      inset 0 0 20px var(--hologram-color);
+  }
+}
+.profile-image {
+    width: 200px; /* Ajustez la largeur selon vos préférences */
+    height: auto; /* Permet à la hauteur de s'ajuster proportionnellement */
+    max-height: 200px; /* Limite la hauteur pour éviter qu'elle soit trop grande */
+    object-fit: contain; /* IMPORTANT: "contain" redimensionne l'image pour qu'elle s'intègre entièrement sans couper */
+    display: block;
+    filter: brightness(1.1) contrast(1.1);
+    /* Ajoutez un léger padding si l'image touche les bords du conteneur */
+    padding: 5px; 
+}
+
+
+/* -------------------- Section Parcours -------------------- */
+.parcours-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes pour les 3 blocs */
+    gap: 20px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.parcours-block {
+    padding: 15px;
+    background-color: rgba(0, 20, 40, 0.4); /* Fond légèrement plus opaque pour le texte */
+    border: 1px dashed rgba(0, 224, 255, 0.2);
+}
+
+.parcours-content {
+    font-size: 0.95em;
+    font-weight: 200;
+}
+
+.scan-line-separator {
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--hologram-color), transparent);
+    margin: 20px 0;
+    box-shadow: 0 0 10px var(--hologram-color);
+}
+
+/* -------------------- Compétences et Langues -------------------- */
+.skills-and-lang-section {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.skills-block {
+    flex: 2; /* Les compétences prennent plus de place */
+}
+
+.languages-block {
+    flex: 1;
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.tech-item {
+    width: 48%; /* Deux items par ligne dans le conteneur flex */
+    margin-bottom: 10px;
+}
+
+.tech-name {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Barres de progression d'XP */
+.xp-bar-container {
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--hologram-color);
+    box-shadow: inset 0 0 5px rgba(0, 224, 255, 0.5);
+}
+
+.xp-bar-fill {
+    height: 100%;
+    background-color: var(--hologram-color);
+    transition: width 1.5s ease-out; /* Animation à l'apparition */
+    position: relative;
+}
+
+.xp-percent {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.7em;
+    font-weight: bold;
+    color: #000;
+    text-shadow: 0 0 1px var(--hologram-color);
+}
+
+.language-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.language-tag {
+    background-color: rgba(0, 224, 255, 0.2);
+    color: var(--hologram-color);
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid var(--hologram-color);
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+/* -------------------- Boutons d'Action -------------------- */
+.action-buttons-section {
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.hologram-button {
+    background: transparent;
+    color: var(--hologram-color);
+    border: 2px solid var(--hologram-color);
+    padding: 10px 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px var(--hologram-color);
+    font-weight: bold;
+}
+
+.hologram-button:hover {
+    background-color: rgba(0, 224, 255, 0.15);
+    box-shadow: 0 0 20px var(--hologram-color);
+    transform: translateY(-2px);
+}
+@media (max-width: 768px) {
+    .header-section {
+        flex-direction: column; /* Empile l'image et le texte sur petits écrans */
+        align-items: center; /* Centre les éléments dans la colonne */
+        text-align: center; /* Centre le texte */
+        gap: 20px;
+    }
+    .profile-image-container {
+        margin-bottom: 10px; /* Espacement sous l'image en mode colonne */
+    }
+    .text-header-content {
+        align-items: center; /* Centre le texte en mode colonne */
+        text-align: center;
+    }
+    .titles-block {
+        justify-content: center; /* Centre les slogans en mode colonne */
+    }
+    .main-title {
+        font-size: 2.5em; /* Ajustement de la taille du titre */
+    }
+    .parcours-section {
+        grid-template-columns: 1fr; /* Une seule colonne pour les sections de parcours */
+    }
+    .skills-and-lang-section {
+        flex-direction: column; /* Empile les compétences et langues */
+        gap: 20px;
+    }
+    .tech-item {
+        width: 100%; /* Une seule colonne pour les compétences */
+    }
+}
