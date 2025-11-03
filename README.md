@@ -1,4 +1,4 @@
-Portfolio Dev - Laboratoire Tech d'Adrien Stiévenart[Votre Nom] | Développeur & Artiste NumériqueBienvenue dans mon laboratoire ! Ce projet sert de portfolio interactif, conçu pour immerger l'utilisateur dans une ambiance de garage/laboratoire de haute technologie, inspirée de l'interface utilisateur de Tony Stark (Iron Man). Chaque projet est présenté sur un écran holographique, transformant la navigation en une expérience futuriste.
+Portfolio Dev - Laboratoire Tech d'Adrien Stiévenart | Développeur & Artiste NumériqueBienvenue dans mon laboratoire ! Ce projet sert de portfolio interactif, conçu pour immerger l'utilisateur dans une ambiance de garage/laboratoire de haute technologie, inspirée de l'interface utilisateur de Tony Stark (Iron Man). Chaque projet est présenté sur un écran holographique, transformant la navigation en une expérience futuriste.
 
 🌟Fonctionnalités Clés
 Immersion Futuriste : Une interface utilisateur inspirée de la science-fiction avec des éléments holographiques (Cyan Neon).
