@@ -20,7 +20,8 @@ src/components/HomeHologram/ : Le composant principal de l'écran d'accueil avec
 .src/App.js : Conteneur principal gérant l'état et la navigation entre les différents écrans holographiques
 .public/ : Contient l'image de fond fixe (background.png) et la photo de profil (profile-adrien.jpg).
 
-⚙️ Installation et Démarrage LocalSuivez ces étapes pour cloner le projet et l'exécuter sur votre machine locale.Cloner le dépôt :Bashgit clone https://github.com/votre-nom-utilisateur/nom-du-repo.git
+⚙️ Installation et Démarrage LocalSuivez ces étapes pour cloner le projet et l'exécuter sur votre machine locale.
+Cloner le dépôt :Bashgit clone 
 cd nom-du-repo
 Installer les dépendances :Bashnpm install
 # ou
