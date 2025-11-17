@@ -33,7 +33,7 @@ const personalData = {
   languages: ['Français (Natif)', 'Anglais (Professionnel)'],
 };
 
-const HomeHologram = () => {
+const HomeHologram = ({ onViewProjects, onContact }) => {
   return (
     <div className="hologram-container">
       <div className="hologram-border">
@@ -98,8 +98,8 @@ const HomeHologram = () => {
 
           {/* Section des Boutons d'Action */}
           <div className="action-buttons-section">
-            <button className="hologram-button projects">VOIR LES PROJETS</button>
-            <button className="hologram-button contact">ME CONTACTER</button>
+           <button className="hologram-button projects" onClick={onViewProjects}>VOIR LES PROJETS</button>
+            <button className="hologram-button contact" onClick={onContact}>ME CONTACTER</button>
           </div>
 
         </div>
