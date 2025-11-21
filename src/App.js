@@ -6,6 +6,7 @@ import { Routes, Route, useNavigate } from 'react-router-dom'; // <--- Importez 
 import HomeHologram from './components/HomeHologram/HomeHologram';
 import ProjectsListScreen from './components/ProjectsList/ProjectsListScreen'; // Importez le composant ProjectsListScreen
 import MyTaskerScreen from './components/MyTasker/MyTaskerScreen';
+import NisolNicoleScreen from './components/NisolNicole/NisolNicoleScreen';
 
 function App() {
   const navigate = useNavigate(); // Hook pour naviguer programmatiquement
@@ -37,7 +38,7 @@ function App() {
 
         {/* Route pour le projet MyTasker */}
         <Route path="/projects/mytasker" element={<MyTaskerScreen onClose={() => navigate('/projects')} />} />
-
+        <Route path="/projects/nisolnicole" element={<NisolNicoleScreen onClose={() => navigate('/projects')} />} />
         {/* Ajoutez d'autres routes de projets ici si nécessaire */}
         {/* <Route path="/projects/autre-projet" element={<AutreProjetScreen onClose={() => navigate('/projects')} />} /> */}
 

@@ -11,6 +11,12 @@ const projects = [
     description: 'Gestionnaire de Projets & Tâches (WPF)',
     thumbnail: '/images/MyTasker/project-view.png' // Utilisez une de vos captures comme vignette
   },
+  { 
+    id: 'nisolnicole', // <--- Nouvel ID
+    title: 'NisolNicole', 
+    description: 'Vitrine Littéraire & E-commerce (Vue3 & .NET)',
+    thumbnail: '/images/NisolNicole/home-page.png' // Utilisez une vignette pour NisolNicole
+  },
   // Ajoutez d'autres projets ici au fur et à mesure
   // { id: 'autre-projet', title: 'Autre Projet', description: 'Description rapide', thumbnail: '/chemin/vers/image.png' },
 ];
