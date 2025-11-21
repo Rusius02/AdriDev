@@ -28,6 +28,12 @@ const projects = [
     description: 'Réseau Social pour Gamers (Django & HTMX)',
     thumbnail: '/images/JustGaming/news-feed.png' 
   },
+  { 
+    id: 'longlove',
+    title: 'LongLove', 
+    description: 'App Mobile pour Couples à Distance (React Native)',
+    thumbnail: '/images/LongLove/messaging.png'
+  },
 ];
 
 const ProjectsListScreen = () => {
