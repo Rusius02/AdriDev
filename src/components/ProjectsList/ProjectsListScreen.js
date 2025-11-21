@@ -17,8 +17,12 @@ const projects = [
     description: 'Vitrine Littéraire & E-commerce (Vue3 & .NET)',
     thumbnail: '/images/NisolNicole/home-page.png' // Utilisez une vignette pour NisolNicole
   },
-  // Ajoutez d'autres projets ici au fur et à mesure
-  // { id: 'autre-projet', title: 'Autre Projet', description: 'Description rapide', thumbnail: '/chemin/vers/image.png' },
+  { 
+    id: 'finovo', // <--- Nouvel ID
+    title: 'Finovo', 
+    description: 'ERP Modulaire (React & FastAPI/Python)',
+    thumbnail: '/images/Finovo/dashboard.png' // Utilisez une vignette pour Finovo
+  },
 ];
 
 const ProjectsListScreen = () => {
