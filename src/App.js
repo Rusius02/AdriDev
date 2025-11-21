@@ -7,6 +7,7 @@ import ProjectsListScreen from './components/ProjectsList/ProjectsListScreen';
 import MyTaskerScreen from './components/MyTasker/MyTaskerScreen';
 import NisolNicoleScreen from './components/NisolNicole/NisolNicoleScreen';
 import FinovoScreen from './components/Finovo/FinovoScreen';
+import JustGamingScreen from './components/JustGaming/JustGamingScreen';
 
 function App() {
   const navigate = useNavigate(); 
@@ -34,6 +35,7 @@ function App() {
         <Route path="/projects/mytasker" element={<MyTaskerScreen onClose={() => navigate('/projects')} />} />
         <Route path="/projects/nisolnicole" element={<NisolNicoleScreen onClose={() => navigate('/projects')} />} />
         <Route path="/projects/finovo" element={<FinovoScreen onClose={() => navigate('/projects')} />} />
+        <Route path="/projects/justgaming" element={<JustGamingScreen onClose={() => navigate('/projects')} />} />
       </Routes>
     </div>
   );

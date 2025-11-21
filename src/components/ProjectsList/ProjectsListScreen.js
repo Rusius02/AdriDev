@@ -1,27 +1,32 @@
-// src/components/ProjectsList/ProjectsListScreen.js
 import React from 'react';
-import { Link } from 'react-router-dom'; // Pour naviguer vers les projets
-import './ProjectsListScreen.css'; // Créez ce fichier CSS
+import { Link } from 'react-router-dom';
+import './ProjectsListScreen.css';
 
-// Données de vos projets (vous pouvez les déplacer dans un fichier de données si elles deviennent nombreuses)
+
 const projects = [
   { 
     id: 'mytasker', 
     title: 'MyTasker', 
     description: 'Gestionnaire de Projets & Tâches (WPF)',
-    thumbnail: '/images/MyTasker/project-view.png' // Utilisez une de vos captures comme vignette
+    thumbnail: '/images/MyTasker/project-view.png' 
   },
   { 
-    id: 'nisolnicole', // <--- Nouvel ID
+    id: 'nisolnicole', 
     title: 'NisolNicole', 
     description: 'Vitrine Littéraire & E-commerce (Vue3 & .NET)',
-    thumbnail: '/images/NisolNicole/home-page.png' // Utilisez une vignette pour NisolNicole
+    thumbnail: '/images/NisolNicole/home-page.png' 
   },
   { 
-    id: 'finovo', // <--- Nouvel ID
+    id: 'finovo', 
     title: 'Finovo', 
     description: 'ERP Modulaire (React & FastAPI/Python)',
-    thumbnail: '/images/Finovo/dashboard.png' // Utilisez une vignette pour Finovo
+    thumbnail: '/images/Finovo/dashboard.png' 
+  },
+  { 
+    id: 'justgaming', 
+    title: 'JustGaming', 
+    description: 'Réseau Social pour Gamers (Django & HTMX)',
+    thumbnail: '/images/JustGaming/news-feed.png' 
   },
 ];
 
