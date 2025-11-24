@@ -34,6 +34,12 @@ const projects = [
     description: 'App Mobile pour Couples à Distance (React Native)',
     thumbnail: '/images/LongLove/messaging.png'
   },
+  { 
+    id: 'cardforge', 
+    title: 'CardForge', 
+    description: 'Jeu de Cartes Personnalisable (Web)',
+    thumbnail: '/images/CardForge/deck-builder.png' 
+  },
 ];
 
 const ProjectsListScreen = () => {
