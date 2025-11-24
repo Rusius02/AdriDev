@@ -5,12 +5,6 @@ import './ProjectsListScreen.css';
 
 const projects = [
   { 
-    id: 'mytasker', 
-    title: 'MyTasker', 
-    description: 'Gestionnaire de Projets & Tâches (WPF)',
-    thumbnail: '/images/MyTasker/project-view.png' 
-  },
-  { 
     id: 'nisolnicole', 
     title: 'NisolNicole', 
     description: 'Vitrine Littéraire & E-commerce (Vue3 & .NET)',
@@ -27,6 +21,12 @@ const projects = [
     title: 'JustGaming', 
     description: 'Réseau Social pour Gamers (Django & HTMX)',
     thumbnail: '/images/JustGaming/home-screen.png' 
+  },
+   { 
+    id: 'mytasker', 
+    title: 'MyTasker', 
+    description: 'Gestionnaire de Projets & Tâches (WPF)',
+    thumbnail: '/images/MyTasker/project-view.png' 
   },
   { 
     id: 'longlove',
