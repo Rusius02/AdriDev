@@ -87,11 +87,6 @@ const LongLoveScreen = ({ onClose }) => {
                   <span key={index} className="tech-tag">{tech}</span>
                 ))}
               </div>
-              {projectData.githubLink && (
-                <a href={projectData.githubLink} target="_blank" rel="noopener noreferrer" className="hologram-button github-button">
-                  <i className="fab fa-github"></i> VOIR SUR GITHUB
-                </a>
-              )}
             </div>
           </div>
 

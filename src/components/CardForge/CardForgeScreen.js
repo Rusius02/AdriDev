@@ -16,7 +16,7 @@ const CardForgeScreen = ({ onClose }) => {
       '**Système de Communauté :** Évaluez, commentez et découvrez les decks créés par d\'autres joueurs.',
     ],
     technologies: ['React (Frontend)', 'Node.js/Express (Backend)', 'MongoDB/PostgreSQL', 'WebSockets (Socket.IO)', 'HTML5', 'CSS3'], 
-    githubLink: 'https://github.com/Rusius02/CardForge', 
+    githubLink: 'https://github.com/Rusius02/TrumpsCardsGames', 
     screenshots: [
       { src: '/images/CardForge/deck-builder.png', alt: 'Maquette de l\'éditeur de deck CardForge' },
       { src: '/images/CardForge/gameplay-screen.png', alt: 'Maquette de l\'écran de gameplay' }, 

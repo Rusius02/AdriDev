@@ -24,12 +24,10 @@ const FinovoScreen = ({ onClose }) => {
       '**Déploiement Cloud & On-Premise :** Options de déploiement flexibles pour s\'adapter aux préférences client.',
     ],
     technologies: ['React', 'FastAPI (Python)', 'SQLAlchemy', 'PostgreSQL', 'Microservices', 'Docker (prévu)'],
-    githubLink: 'https://github.com/Rusius02/Finovo', 
+    githubLink: 'https://github.com/Rusius02/Finovo-frontend', 
     screenshots: [
       { src: '/images/Finovo/billing-screen.png', alt: 'Capture d\'écran du Module de Facturation' },
-      { src: '/images/Finovo/dashboard.png', alt: 'Capture d\'écran du Tableau de Bord' },
-      { src: '/images/Finovo/peppol-xml.png', alt: 'Capture d\'écran de la génération XML Peppol' },
-    ],
+     ],
   };
 
   const [currentScreenshotIndex, setCurrentScreenshotIndex] = useState(0);
@@ -93,11 +91,6 @@ const FinovoScreen = ({ onClose }) => {
                   <span key={index} className="tech-tag">{tech}</span>
                 ))}
               </div>
-              {projectData.githubLink && (
-                <a href={projectData.githubLink} target="_blank" rel="noopener noreferrer" className="hologram-button github-button">
-                  <i className="fab fa-github"></i> VOIR SUR GITHUB
-                </a>
-              )}
             </div>
           </div>
 

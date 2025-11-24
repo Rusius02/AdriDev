@@ -21,7 +21,7 @@ const NisolNicoleScreen = ({ onClose }) => {
       '**Optimisation SEO & Performance** - Amélioration du référencement et des performances globales du site.',
     ],
     technologies: ['Vue3', '.NET/C#', 'REST API', 'HTML5', 'CSS3', 'JavaScript'],
-    githubLink: 'https://github.com/Rusius02/NisolNicole', 
+    githubLink: 'https://github.com/Rusius02/NicoleNisol', 
     screenshots: [
       { src: '/images/NisolNicole/home-screen.png', alt: 'Capture d\'écran de la Page d\'Accueil' },
       { src: '/images/NisolNicole/shop-screen.png', alt: 'Capture d\'écran de la Page Mes Écrits' },

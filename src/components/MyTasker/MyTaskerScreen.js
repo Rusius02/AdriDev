@@ -15,7 +15,7 @@ const MyTaskerScreen = ({ onClose }) => {
       'Visualisation Claire : Des vues dédiées pour chaque entité afin d\'organiser l\'information.',
     ],
     technologies: ['WPF', 'C#', '.NET Framework'],
-    githubLink: 'https://github.com/Rusius02/MyTasker', 
+    githubLink: 'https://github.com/Rusius02/myTasker', 
     screenshots: [
       { src: '/images/MyTasker/project-view.png', alt: 'Capture d\'écran de la Vue Projet' },
       { src: '/images/MyTasker/person-view.png', alt: 'Capture d\'écran de la Vue Personne' },

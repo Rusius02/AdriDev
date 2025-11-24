@@ -16,7 +16,7 @@ const JustGamingScreen = ({ onClose }) => {
       '**Groupes et Communautés :** Création et gestion de communautés autour de jeux spécifiques ou d\'intérêts communs.',
     ],
     technologies: ['Python', 'Django', 'HTMX', 'HTML5', 'CSS3', 'JavaScript'],
-    githubLink: 'https://github.com/Rusius02/JustGaming', 
+    githubLink: 'https://github.com/JeremyVandeputte/JustGaming', 
     screenshots: [
       { src: '/images/JustGaming/news-screen.png', alt: 'Capture d\'écran du Fil d\'Actualités' },
       { src: '/images/JustGaming/home-screen.png', alt: 'Capture d\'écran de l\'acceuil' },
@@ -85,11 +85,6 @@ const JustGamingScreen = ({ onClose }) => {
                   <span key={index} className="tech-tag">{tech}</span>
                 ))}
               </div>
-              {projectData.githubLink && (
-                <a href={projectData.githubLink} target="_blank" rel="noopener noreferrer" className="hologram-button github-button">
-                  <i className="fab fa-github"></i> VOIR SUR GITHUB
-                </a>
-              )}
             </div>
           </div>
 
