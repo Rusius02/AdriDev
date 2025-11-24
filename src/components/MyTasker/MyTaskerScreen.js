@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './MyTaskerScreen.css';
 
-const MyTaskerScreen = ({ onClose }) => { // onClose sera pour fermer l'écran et revenir à l'accueil
+const MyTaskerScreen = ({ onClose }) => { 
   const projectData = {
     title: 'MyTasker - Gestionnaire de Projets & Tâches',
     subtitle: 'Projet de Découverte WPF (C#)',
@@ -15,7 +15,7 @@ const MyTaskerScreen = ({ onClose }) => { // onClose sera pour fermer l'écran e
       'Visualisation Claire : Des vues dédiées pour chaque entité afin d\'organiser l\'information.',
     ],
     technologies: ['WPF', 'C#', '.NET Framework'],
-    githubLink: 'https://github.com/Rusius02/MyTasker', // Remplacez par le lien réel de votre dépôt
+    githubLink: 'https://github.com/Rusius02/MyTasker', 
     screenshots: [
       { src: '/images/MyTasker/project-view.png', alt: 'Capture d\'écran de la Vue Projet' },
       { src: '/images/MyTasker/person-view.png', alt: 'Capture d\'écran de la Vue Personne' },
@@ -42,14 +42,12 @@ const MyTaskerScreen = ({ onClose }) => { // onClose sera pour fermer l'écran e
       <div className="project-hologram-border">
         <div className="project-hologram-content">
           
-          {/* Bouton de Fermeture */}
           {onClose && (
             <button className="hologram-close-button" onClick={onClose}>
               <i className="fas fa-times"></i>
             </button>
           )}
 
-          {/* En-tête du Projet */}
           <div className="project-header">
             <h1 className="project-title">{projectData.title}</h1>
             <p className="project-subtitle">{projectData.subtitle}</p>
@@ -57,7 +55,6 @@ const MyTaskerScreen = ({ onClose }) => { // onClose sera pour fermer l'écran e
 
           <div className="scan-line-separator"></div>
 
-          {/* Section Description et Objectif */}
           <div className="project-details">
             <div className="description-block">
               <h3><i className="fas fa-info-circle"></i> PRÉSENTATION DU PROJET</h3>
@@ -71,7 +68,6 @@ const MyTaskerScreen = ({ onClose }) => { // onClose sera pour fermer l'écran e
 
           <div className="scan-line-separator"></div>
 
-          {/* Section Fonctionnalités et Technologies */}
           <div className="features-tech-section">
             <div className="features-block">
               <h3><i className="fas fa-list-check"></i> FONCTIONNALITÉS CLÉS</h3>
@@ -98,7 +94,6 @@ const MyTaskerScreen = ({ onClose }) => { // onClose sera pour fermer l'écran e
 
           <div className="scan-line-separator"></div>
 
-          {/* Section Captures d'écran (Carrousel) */}
           <div className="screenshots-section">
             <h3><i className="fas fa-image"></i> APERÇUS DE L'INTERFACE</h3>
             <div className="screenshot-viewer">
