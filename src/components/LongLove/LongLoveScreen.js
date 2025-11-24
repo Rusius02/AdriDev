@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './LongLoveScreen.css'; // Nous allons créer ce fichier CSS
+import './LongLoveScreen.css'; 
 
 const LongLoveScreen = ({ onClose }) => {
   const projectData = {
@@ -17,7 +17,7 @@ const LongLoveScreen = ({ onClose }) => {
       '**"Love Letters" :** Un espace dédié à l\'écriture de messages intimes, conservés comme des trésors de la relation.',
     ],
     technologies: ['React Native', 'Node.js (Express/Firebase)', 'WebSockets (Socket.IO)', 'MongoDB/PostgreSQL', 'JavaScript'],
-    githubLink: 'https://github.com/Rusius02/LongLove', // Remplacez par le lien réel de votre dépôt
+    githubLink: 'https://github.com/Rusius02/LongLove', 
     screenshots: [
       { src: '/images/LongLove/messaging.png', alt: 'Maquette de l\'écran de messagerie' },
       { src: '/images/LongLove/shared-calendar.png', alt: 'Maquette de l\'écran Calendrier Partagé' },
@@ -45,14 +45,12 @@ const LongLoveScreen = ({ onClose }) => {
       <div className="project-hologram-border">
         <div className="project-hologram-content">
           
-          {/* Bouton de Fermeture */}
           {onClose && (
             <button className="hologram-close-button" onClick={onClose}>
               <i className="fas fa-times"></i>
             </button>
           )}
 
-          {/* En-tête du Projet */}
           <div className="project-header">
             <h1 className="project-title">{projectData.title}</h1>
             <p className="project-subtitle">{projectData.subtitle}</p>
@@ -60,7 +58,6 @@ const LongLoveScreen = ({ onClose }) => {
 
           <div className="scan-line-separator"></div>
 
-          {/* Section Description et Objectif */}
           <div className="project-details">
             <div className="description-block">
               <h3><i className="fas fa-heart"></i> L'IDÉE DERRIÈRE LONGLOVE</h3>
@@ -74,10 +71,9 @@ const LongLoveScreen = ({ onClose }) => {
 
           <div className="scan-line-separator"></div>
 
-          {/* Section Fonctionnalités et Technologies */}
           <div className="features-tech-section">
             <div className="features-block">
-              <h3><i className="fas fa-gift-heart"></i> FONCTIONNALITÉS CLÉS</h3> {/* Icône de cadeau et cœur */}
+              <h3><i className="fas fa-gift-heart"></i> FONCTIONNALITÉS CLÉS</h3> 
               <ul>
                 {projectData.features.map((feature, index) => (
                   <li key={index} dangerouslySetInnerHTML={{ __html: feature }}></li>
@@ -101,9 +97,8 @@ const LongLoveScreen = ({ onClose }) => {
 
           <div className="scan-line-separator"></div>
 
-          {/* Section Captures d'écran (Carrousel) */}
           <div className="screenshots-section">
-            <h3><i className="fas fa-images"></i> MAQUETTES CONCEPTUELLES</h3> {/* Icône d'images */}
+            <h3><i className="fas fa-images"></i> MAQUETTES CONCEPTUELLES</h3> 
             <div className="screenshot-viewer">
               <button onClick={prevScreenshot} className="nav-button"><i className="fas fa-chevron-left"></i></button>
               <img 
