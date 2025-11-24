@@ -1,28 +1,23 @@
 .App {
-  /* Assurez-vous que le HTML et le body n'ont pas de marges ou padding par défaut */
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Pour que padding et border soient inclus dans width/height */
+  box-sizing: border-box; 
 
-  /* Styles pour l'image de fond */
-    background-image: url('../public/background.png'); /* Chemin relatif au dossier public */
-  background-size: cover; /* L'image couvrira toute la zone */
-  background-position: center; /* Centre l'image */
-  background-repeat: no-repeat; /* Empêche l'image de se répéter */
-  background-attachment: fixed; /* <--- C'est ça qui empêche le défilement ! */
+    background-image: url('../public/background.png');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
 
-  /* Assure que la div App prend toute la hauteur et largeur de la fenêtre */
   min-height: 100vh;
-  width: 100vw; /* <--- Pour couvrir toute la largeur de la vue */
-  overflow: hidden; /* <--- Empêche le défilement si le contenu dépasse */
+  width: 100vw;
+  overflow: hidden; 
 
-  /* Centrage du contenu de l'application */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Peut être ajusté si vous voulez le contenu en haut */
+  justify-content: center; 
   
-  /* Couleur du texte par défaut */
   color: white; 
 }
 
