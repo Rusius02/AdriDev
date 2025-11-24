@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './JustGamingScreen.css'; // Nous allons créer ce fichier CSS
+import './JustGamingScreen.css'; 
 
 const JustGamingScreen = ({ onClose }) => {
   const projectData = {
@@ -16,7 +16,7 @@ const JustGamingScreen = ({ onClose }) => {
       '**Groupes et Communautés :** Création et gestion de communautés autour de jeux spécifiques ou d\'intérêts communs.',
     ],
     technologies: ['Python', 'Django', 'HTMX', 'HTML5', 'CSS3', 'JavaScript'],
-    githubLink: 'https://github.com/Rusius02/JustGaming', // Remplacez par le lien réel de votre dépôt
+    githubLink: 'https://github.com/Rusius02/JustGaming', 
     screenshots: [
       { src: '/images/JustGaming/news-screen.png', alt: 'Capture d\'écran du Fil d\'Actualités' },
       { src: '/images/JustGaming/home-screen.png', alt: 'Capture d\'écran de l\'acceuil' },
@@ -43,14 +43,12 @@ const JustGamingScreen = ({ onClose }) => {
       <div className="project-hologram-border">
         <div className="project-hologram-content">
           
-          {/* Bouton de Fermeture */}
           {onClose && (
             <button className="hologram-close-button" onClick={onClose}>
               <i className="fas fa-times"></i>
             </button>
           )}
 
-          {/* En-tête du Projet */}
           <div className="project-header">
             <h1 className="project-title">{projectData.title}</h1>
             <p className="project-subtitle">{projectData.subtitle}</p>
@@ -58,24 +56,22 @@ const JustGamingScreen = ({ onClose }) => {
 
           <div className="scan-line-separator"></div>
 
-          {/* Section Description et Objectif */}
           <div className="project-details">
             <div className="description-block">
-              <h3><i className="fas fa-users-game"></i> L'ESPRIT COMMUNAUTAIRE</h3> {/* Icône de jeu */}
+              <h3><i className="fas fa-users-game"></i> L'ESPRIT COMMUNAUTAIRE</h3> 
               <p>{projectData.description}</p>
             </div>
             <div className="objective-block">
-              <h3><i className="fas fa-brain"></i> ARCHITECTURE & TECHNOLOGIES CLÉS</h3> {/* Icône de cerveau pour l'architecture */}
+              <h3><i className="fas fa-brain"></i> ARCHITECTURE & TECHNOLOGIES CLÉS</h3> 
               <p>{projectData.objective}</p>
             </div>
           </div>
 
           <div className="scan-line-separator"></div>
 
-          {/* Section Fonctionnalités et Technologies */}
           <div className="features-tech-section">
             <div className="features-block">
-              <h3><i className="fas fa-gamepad"></i> FONCTIONNALITÉS ESSENTIELLES</h3> {/* Icône de manette */}
+              <h3><i className="fas fa-gamepad"></i> FONCTIONNALITÉS ESSENTIELLES</h3> 
               <ul>
                 {projectData.features.map((feature, index) => (
                   <li key={index} dangerouslySetInnerHTML={{ __html: feature }}></li>
@@ -83,7 +79,7 @@ const JustGamingScreen = ({ onClose }) => {
               </ul>
             </div>
             <div className="tech-used-block">
-              <h3><i className="fas fa-laptop-code"></i> PILES TECHNOLOGIQUES</h3> {/* Icône d'ordinateur et code */}
+              <h3><i className="fas fa-laptop-code"></i> PILES TECHNOLOGIQUES</h3>
               <div className="tech-tags">
                 {projectData.technologies.map((tech, index) => (
                   <span key={index} className="tech-tag">{tech}</span>
@@ -99,7 +95,6 @@ const JustGamingScreen = ({ onClose }) => {
 
           <div className="scan-line-separator"></div>
 
-          {/* Section Captures d'écran (Carrousel) */}
           <div className="screenshots-section">
             <h3><i className="fas fa-image"></i> APERÇUS DE L'INTERFACE</h3>
             <div className="screenshot-viewer">
