@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './ProjectsListScreen.css';
 
 
@@ -49,10 +49,17 @@ const projects = [
 ];
 
 const ProjectsListScreen = () => {
+  const navigate = useNavigate();
+  const handleGoHome = () => {
+    navigate('/'); // Navigue vers la route racine (accueil)
+  };
   return (
     <div className="projects-list-container">
       <div className="projects-list-hologram-border">
         <div className="projects-list-hologram-content">
+          <button className="hologram-back-button" onClick={handleGoHome}>
+            <i className="fas fa-arrow-left"></i> Retour à l'Accueil
+          </button>
           <h1 className="projects-list-title">MES PROJETS</h1>
           <p className="projects-list-subtitle">Explorez mes réalisations techniques et artistiques.</p>
           

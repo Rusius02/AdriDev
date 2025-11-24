@@ -38,7 +38,36 @@
   padding: 20px;
   text-align: center;
 }
+.hologram-back-button {
+  background: transparent;
+  color: var(--hologram-color); 
+  border: 1px solid var(--hologram-color);
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px var(--hologram-color);
+  font-weight: bold;
+  margin-bottom: 30px; 
+  display: inline-flex; 
+  align-items: center;
+  gap: 10px; 
+  position: absolute; 
+  top: 20px; 
+  left: 20px; 
+  z-index: 5; 
+}
 
+.hologram-back-button i {
+  margin-right: 5px; 
+}
+
+.hologram-back-button:hover {
+  background-color: rgba(0, 224, 255, 0.1); 
+  box-shadow: 0 0 15px var(--hologram-color); 
+  transform: translateY(-2px); 
+}
 .projects-list-title {
   font-size: 3em;
   color: var(--hologram-color);
