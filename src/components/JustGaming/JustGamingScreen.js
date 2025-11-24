@@ -20,7 +20,7 @@ const JustGamingScreen = ({ onClose }) => {
     screenshots: [
       { src: '/images/JustGaming/news-screen.png', alt: 'Capture d\'écran du Fil d\'Actualités' },
       { src: '/images/JustGaming/home-screen.png', alt: 'Capture d\'écran de l\'acceuil' },
-      { src: '/images/JustGaming/chat-navbar-myprofiler.png', alt: 'Capture d\'écran de la Messagerie' },
+      { src: '/images/JustGaming/chat-navabar-myprofile.png', alt: 'Capture d\'écran de la Messagerie' },
     ],
   };
 

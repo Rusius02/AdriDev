@@ -14,19 +14,19 @@ const projects = [
     id: 'nisolnicole', 
     title: 'NisolNicole', 
     description: 'Vitrine Littéraire & E-commerce (Vue3 & .NET)',
-    thumbnail: '/images/NisolNicole/home-page.png' 
+    thumbnail: '/images/NisolNicole/home-screen.png' 
   },
   { 
     id: 'finovo', 
     title: 'Finovo', 
     description: 'ERP Modulaire (React & FastAPI/Python)',
-    thumbnail: '/images/Finovo/dashboard.png' 
+    thumbnail: '/images/Finovo/billing-screen.png' 
   },
   { 
     id: 'justgaming', 
     title: 'JustGaming', 
     description: 'Réseau Social pour Gamers (Django & HTMX)',
-    thumbnail: '/images/JustGaming/news-feed.png' 
+    thumbnail: '/images/JustGaming/home-screen.png' 
   },
   { 
     id: 'longlove',

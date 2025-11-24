@@ -26,7 +26,7 @@ const FinovoScreen = ({ onClose }) => {
     technologies: ['React', 'FastAPI (Python)', 'SQLAlchemy', 'PostgreSQL', 'Microservices', 'Docker (prévu)'],
     githubLink: 'https://github.com/Rusius02/Finovo', // Remplacez par le lien réel de votre dépôt
     screenshots: [
-      { src: '/images/Finovo/invoicing-module.png', alt: 'Capture d\'écran du Module de Facturation' },
+      { src: '/images/Finovo/billing-screen.png', alt: 'Capture d\'écran du Module de Facturation' },
       { src: '/images/Finovo/dashboard.png', alt: 'Capture d\'écran du Tableau de Bord' },
       { src: '/images/Finovo/peppol-xml.png', alt: 'Capture d\'écran de la génération XML Peppol' },
     ],

@@ -23,9 +23,9 @@ const NisolNicoleScreen = ({ onClose }) => {
     technologies: ['Vue3', '.NET/C#', 'REST API', 'HTML5', 'CSS3', 'JavaScript'],
     githubLink: 'https://github.com/Rusius02/NisolNicole', // Remplacez par le lien réel de votre dépôt
     screenshots: [
-      { src: '/images/NisolNicole/home-page.png', alt: 'Capture d\'écran de la Page d\'Accueil' },
-      { src: '/images/NisolNicole/writings-page.png', alt: 'Capture d\'écran de la Page Mes Écrits' },
-      { src: '/images/NisolNicole/contact-page.png', alt: 'Capture d\'écran de la Page Contact' },
+      { src: '/images/NisolNicole/home-screen.png', alt: 'Capture d\'écran de la Page d\'Accueil' },
+      { src: '/images/NisolNicole/shop-screen.png', alt: 'Capture d\'écran de la Page Mes Écrits' },
+      { src: '/images/NisolNicole/contact-screen.png', alt: 'Capture d\'écran de la Page Contact' },
     ],
   };
 
