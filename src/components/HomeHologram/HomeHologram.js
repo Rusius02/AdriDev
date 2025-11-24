@@ -1,10 +1,9 @@
 import './HomeHologram.css';
 
-// Définition des données pour l'affichage
 const personalData = {
   name: 'ADRIEN STIÉVENART',
   titles: ['Développeur et Artiste dans l\'Âme', 'Bachelier en Informatique de Gestion'],
-  photoPath: '/profile-adrien.jpg', // Placez votre image dans le dossier public
+  photoPath: '/profile-adrien.jpg', 
   sections: [
     {
       title: 'MON PARCOURS : L\'ÉVOLUTION',
@@ -39,14 +38,13 @@ const HomeHologram = ({ onViewProjects, onContact }) => {
       <div className="hologram-border">
         <div className="hologram-content">
           
-          {/* Section principale - Nom et Titres */}
+          
          <div className="header-section">
             <div className="profile-image-container">
               <img src={personalData.photoPath} alt="Adrien Stiévenart" className="profile-image" />
             </div>
-            {/* Nouveau conteneur pour les textes à côté de la photo */}
             <div className="text-header-content"> 
-                <h1 className="main-title">{personalData.name}</h1> {/* Ou {displayedTitle} si vous avez gardé l'effet */}
+                <h1 className="main-title">{personalData.name}</h1> 
                 <div className="titles-block">
                     <p className="subtitle">{personalData.titles[0]}</p>
                     <p className="subtitle">{personalData.titles[1]}</p>
@@ -54,7 +52,6 @@ const HomeHologram = ({ onViewProjects, onContact }) => {
             </div>
           </div>
 
-          {/* Section du Parcours divisé */}
           <div className="scan-line-separator"></div>
           <div className="parcours-section">
             {personalData.sections.map((section, index) => (
@@ -66,7 +63,6 @@ const HomeHologram = ({ onViewProjects, onContact }) => {
           </div>
           <div className="scan-line-separator"></div>
 
-          {/* Section des Compétences et Langues */}
           <div className="skills-and-lang-section">
             
             <div className="skills-block">
@@ -96,7 +92,6 @@ const HomeHologram = ({ onViewProjects, onContact }) => {
 
           </div>
 
-          {/* Section des Boutons d'Action */}
           <div className="action-buttons-section">
            <button className="hologram-button projects" onClick={onViewProjects}>VOIR LES PROJETS</button>
             <button className="hologram-button contact" onClick={onContact}>ME CONTACTER</button>
@@ -109,6 +104,3 @@ const HomeHologram = ({ onViewProjects, onContact }) => {
 };
 
 export default HomeHologram;
-
-// NOTE : N'oubliez pas d'installer Font Awesome pour les icônes (npm install --save @fortawesome/fontawesome-free)
-// ou de remplacer les balises <i> par des icônes React.
