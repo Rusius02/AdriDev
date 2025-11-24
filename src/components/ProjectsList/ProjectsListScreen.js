@@ -5,6 +5,12 @@ import './ProjectsListScreen.css';
 
 const projects = [
   { 
+    id: 'portfolio', 
+    title: 'Ce Portfolio Interactif', 
+    description: 'Une Vitrine Technologique (React & CSS)',
+    thumbnail: '/images/this/home-screen.png' 
+  },
+  { 
     id: 'nisolnicole', 
     title: 'NisolNicole', 
     description: 'Vitrine Littéraire & E-commerce (Vue3 & .NET)',

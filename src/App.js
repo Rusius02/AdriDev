@@ -10,6 +10,7 @@ import FinovoScreen from './components/Finovo/FinovoScreen';
 import JustGamingScreen from './components/JustGaming/JustGamingScreen';
 import LongLoveScreen from './components/LongLove/LongLoveScreen';
 import CardForgeScreen from './components/CardForge/CardForgeScreen';
+import PortfolioScreen from './components/this/this'; 
 
 function App() {
   const navigate = useNavigate(); 
@@ -33,7 +34,7 @@ function App() {
         } />
 
         <Route path="/projects" element={<ProjectsListScreen />} />
-
+        <Route path="/projects/portfolio" element={<PortfolioScreen onClose={() => navigate('/projects')} />} />
         <Route path="/projects/mytasker" element={<MyTaskerScreen onClose={() => navigate('/projects')} />} />
         <Route path="/projects/nisolnicole" element={<NisolNicoleScreen onClose={() => navigate('/projects')} />} />
         <Route path="/projects/finovo" element={<FinovoScreen onClose={() => navigate('/projects')} />} />
