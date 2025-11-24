@@ -18,9 +18,9 @@ const JustGamingScreen = ({ onClose }) => {
     technologies: ['Python', 'Django', 'HTMX', 'HTML5', 'CSS3', 'JavaScript'],
     githubLink: 'https://github.com/Rusius02/JustGaming', // Remplacez par le lien réel de votre dépôt
     screenshots: [
-      { src: '/images/JustGaming/news-feed.png', alt: 'Capture d\'écran du Fil d\'Actualités' },
-      { src: '/images/JustGaming/partner-finder.png', alt: 'Capture d\'écran de la Recherche de Partenaires' },
-      { src: '/images/JustGaming/messenger.png', alt: 'Capture d\'écran de la Messagerie' },
+      { src: '/images/JustGaming/news-screen.png', alt: 'Capture d\'écran du Fil d\'Actualités' },
+      { src: '/images/JustGaming/home-screen.png', alt: 'Capture d\'écran de l\'acceuil' },
+      { src: '/images/JustGaming/chat-navbar-myprofiler.png', alt: 'Capture d\'écran de la Messagerie' },
     ],
   };
 
