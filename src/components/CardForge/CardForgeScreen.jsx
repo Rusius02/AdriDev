@@ -47,7 +47,7 @@ const CardForgeScreen = ({ onClose }) => {
 
         {onClose && (
           <button className="hologram-close-button" onClick={onClose}>
-            <i className="fas fa-times"></i> {t('project_close_button')} 
+            <i className="fas fa-times"></i>
           </button>
         )}
 
