@@ -32,5 +32,25 @@
   "project_title_longlove": "LongLove",
   "project_description_longlove": "App Mobile pour Couples à Distance (React Native)",
   "project_title_cardforge": "CardForge",
-  "project_description_cardforge": "Jeu de Cartes Personnalisable (Web)"
+  "project_description_cardforge": "Jeu de Cartes Personnalisable (Web)",
+
+  "project_close_button": "Fermer", 
+  "cardforge_title": "CardForge - Le Créateur de Top Trumps Personnalisé",
+  "cardforge_subtitle": "Jeu de Cartes Compétitif & Moddable (Technologies Web Modernes)",
+  "cardforge_idea_title": "L'IDÉE DERRIÈRE CARDORGE",
+  "cardforge_description": "CardForge est un projet de jeu de cartes en ligne inspiré du célèbre principe des 'Top Trumps', mais avec une dimension créative et communautaire inégalée : la possibilité pour les joueurs de créer leurs propres decks de A à Z. Fatigué des jeux aux cartes prédéfinies, l'objectif est d'offrir une plateforme où l'imagination est la seule limite, permettant de confronter n'importe quel thème, personnage ou concept.",
+  "cardforge_vision_title": "VISION & DÉFIS TECHNIQUES",
+  "cardforge_objective": "L'ambition de CardForge est de développer un environnement de jeu sur navigateur robuste et intuitif, qui supporte non seulement le gameplay 'Top Trumps' classique, mais aussi un éditeur de cartes et de decks puissant. Les défis techniques incluent la gestion dynamique des schémas de cartes (caractéristiques variables), la persistance des données utilisateur (decks créés) et une interface temps réel pour les parties multijoueurs. Le but est de prouver qu'un jeu de cartes web peut être riche, personnalisable et compétitif.",
+  "cardforge_features_title": "CARACTÉRISTIQUES PRINCIPALES",
+  "cardforge_feature_1": "**Éditeur de Deck Avancé :** Créez des cartes avec des noms, descriptions, images personnalisées et des statistiques définissables (force, agilité, intelligence, etc.).",
+  "cardforge_feature_2": "**Gameplay \"Top Trumps\" :** Affrontez d'autres joueurs en ligne dans des duels stratégiques, où la connaissance de votre deck et la chance déterminent le vainqueur.",
+  "cardforge_feature_3": "**Gestion de Collections :** Organisez, modifiez et partagez vos decks personnalisés avec la communauté.",
+  "cardforge_feature_4": "**Matchmaking Intelligent :** Trouvez rapidement des adversaires en fonction de vos préférences et de la disponibilité des decks.",
+  "cardforge_feature_5": "**Système de Communauté :** Évaluez, commentez et découvrez les decks créés par d'autres joueurs.",
+  "cardforge_tech_stack_title": "BOÎTE À OUTILS TECHNOLOGIQUE",
+  "cardforge_github_button": "VOIR SUR GITHUB",
+  "cardforge_screenshots_title": "APERÇUS DU JEU",
+  "cardforge_screenshot_alt_1": "Maquette de l'éditeur de deck CardForge",
+  "cardforge_screenshot_alt_2": "Maquette de l'écran de gameplay",
+  "cardforge_screenshot_alt_3": "Maquette de la gestion de collection"
 }
