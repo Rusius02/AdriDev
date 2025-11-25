@@ -1,18 +1,28 @@
 {
-  "home_title": "PORTFOLIO ADRIEN",
-  "home_subtitle": "DÉVELOPPEUR FULL-STACK & ARCHITECTE LOGICIEL",
+
+  "home_name": "ADRIEN STIÉVENART",
+  "home_title_1": "Développeur et Artiste dans l'Âme",
+  "home_title_2": "Bachelier en Informatique de Gestion",
+
+
+  "path_section_title_1": "MON PARCOURS : L'ÉVOLUTION",
+  "path_section_content_1": "Après quelques années d'études d'ingénieur en agronomie, j'ai réalisé que cette voie n'était pas faite pour moi. Mon intérêt s'est alors porté sur l'informatique, en particulier le développement web, mobile et logiciel. J'ai commencé par apprendre les bases de Java, puis j'ai complété un Bachelier en Informatique de Gestion avec succès.",
+  
+  "path_section_title_2": "EXPÉRIENCE PROFESSIONNELLE : PHARMA TECH",
+  "path_section_content_2": "J'ai acquis une première expérience en tant que consultant, affecté à une mission dans une société spécialisée dans le développement de solutions informatiques pour le secteur pharmaceutique.",
+  
+  "path_section_title_3": "NOUVELLE AVENTURE : INDÉPENDANCE",
+  "path_section_content_3": "Malgré les doutes générés par la complexité du marché de l'emploi actuel, j'ai pris la décision de me lancer dans une aventure solo pour maîtriser mes projets. Bienvenue sur mon portfolio ! N'hésitez pas à me contacter pour toute collaboration. Explorez mes réalisations ci-dessous.",
+
+
+  "skills_section_title": "COMPÉTENCES TECHNIQUES",
+
+  "languages_section_title": "LANGUES",
+  "language_french_native": "Français (Natif)",
+  "language_english_professional": "Anglais (Professionnel)",
+
+
+
   "view_projects": "VOIR LES PROJETS",
-  "contact_me": "ME CONTACTER",
-  "my_projects": "MES PROJETS",
-  "explore_my_work": "Explorez mes réalisations techniques et artistiques.",
-  "back_to_home": "Retour à l'Accueil",
-  "view_project": "VOIR LE PROJET",
-  "project_title_portfolio": "Ce Portfolio Interactif",
-  "project_subtitle_portfolio": "Une Vitrine Technologique Construite avec React & CSS Holographique",
-  "project_github_repo": "DÉPÔT GITHUB DU PORTFOLIO",
-  "project_idea": "L'IDÉE DERRIÈRE {{projectName}}",
-  "project_vision_challenges": "VISION & DÉFIS TECHNIQUES",
-  "project_key_features": "CARACTÉRISTIQUES PRINCIPALES",
-  "project_tech_stack": "PILES TECHNOLOGIQUES",
-  "project_screenshots": "APERÇUS DU PROJET"
+  "contact_me_linkedin": "MON PROFIL LINKEDIN"
 }

@@ -1,23 +1,12 @@
+import React from 'react';
 import './HomeHologram.css';
+import { useTranslation } from 'react-i18next'; 
 
+const linkedInUrl = "https://www.linkedin.com/in/adrien-sti%C3%A9venart-105361211/";
+
+const HomeHologram = ({ onViewProjects }) => { 
+  const { t } = useTranslation(); 
 const personalData = {
-  name: 'ADRIEN STIÉVENART',
-  titles: ['Développeur et Artiste dans l\'Âme', 'Bachelier en Informatique de Gestion'],
-  photoPath: '/profile-adrien.jpg', 
-  sections: [
-    {
-      title: 'MON PARCOURS : L\'ÉVOLUTION',
-      content: 'Après quelques années d\'études d\'ingénieur en agronomie, j\'ai réalisé que cette voie n\'était pas faite pour moi. Mon intérêt s\'est alors porté sur l\'informatique, en particulier le développement web, mobile et logiciel. J\'ai commencé par apprendre les bases de Java, puis j\'ai complété un Bachelier en Informatique de Gestion avec succès.',
-    },
-    {
-      title: 'EXPÉRIENCE PROFESSIONNELLE : PHARMA TECH',
-      content: 'J\'ai acquis une première expérience en tant que consultant, affecté à une mission dans une société spécialisée dans le développement de solutions informatiques pour le secteur pharmaceutique.',
-    },
-    {
-      title: 'NOUVELLE AVENTURE : INDÉPENDANCE',
-      content: 'Malgré les doutes générés par la complexité du marché de l\'emploi actuel, j\'ai pris la décision de me lancer dans une aventure solo pour maîtriser mes projets. Bienvenue sur mon portfolio ! N\'hésitez pas à me contacter pour toute collaboration. Explorez mes réalisations ci-dessous.',
-    },
-  ],
   technologies: [
     { name: 'React', xp: 70 },
     { name: 'Angular', xp: 50 },
@@ -29,45 +18,49 @@ const personalData = {
     { name: 'Python', xp: 75 },
     { name: 'VBA', xp: 65 },
   ],
-  languages: ['Français (Natif)', 'Anglais (Professionnel)'],
 };
-const linkedInUrl = "https://www.linkedin.com/in/adrien-sti%C3%A9venart-105361211/";
-const HomeHologram = ({ onViewProjects, onContact }) => {
   return (
     <div className="hologram-container">
       <div className="hologram-border">
         <div className="hologram-content">
-          
-          
-         <div className="header-section">
+
+          <div className="header-section">
             <div className="profile-image-container">
-              <img src={personalData.photoPath} alt="Adrien Stiévenart" className="profile-image" />
+              <img src="/profile-adrien.jpg" alt={t('home_name')} className="profile-image" />
             </div>
-            <div className="text-header-content"> 
-                <h1 className="main-title">{personalData.name}</h1> 
+            <div className="text-header-content">
+                <h1 className="main-title">{t('home_name')}</h1>
                 <div className="titles-block">
-                    <p className="subtitle">{personalData.titles[0]}</p>
-                    <p className="subtitle">{personalData.titles[1]}</p>
+                    <p className="subtitle">{t('home_title_1')}</p>
+                    <p className="subtitle">{t('home_title_2')}</p>
                 </div>
             </div>
           </div>
 
           <div className="scan-line-separator"></div>
           <div className="parcours-section">
-            {personalData.sections.map((section, index) => (
-              <div key={index} className="parcours-block">
-                <h3>{section.title}</h3>
-                <p className="parcours-content">{section.content}</p>
-              </div>
-            ))}
+            <div className="parcours-block">
+                <h3>{t('path_section_title_1')}</h3>
+                <p className="parcours-content">{t('path_section_content_1')}</p>
+            </div>
+            <div className="parcours-block">
+                <h3>{t('path_section_title_2')}</h3>
+                <p className="parcours-content">{t('path_section_content_2')}</p>
+            </div>
+            <div className="parcours-block">
+                <h3>{t('path_section_title_3')}</h3>
+                <p className="parcours-content">{t('path_section_content_3')}</p>
+            </div>
           </div>
           <div className="scan-line-separator"></div>
 
           <div className="skills-and-lang-section">
-            
+
             <div className="skills-block">
-              <h2><i className="fas fa-microchip"></i> COMPÉTENCES TECHNIQUES</h2>
+              <h2><i className="fas fa-microchip"></i> {t('skills_section_title')}</h2>
               <div className="tech-list">
+                {/* Les noms de techs (React, Angular...) restent les mêmes, mais les XP peuvent être affichés */}
+                {/* ... (votre code existant pour les technologies) ... */}
                 {personalData.technologies.map((tech, index) => (
                   <div key={index} className="tech-item">
                     <span className="tech-name">{tech.name}</span>
@@ -82,25 +75,24 @@ const HomeHologram = ({ onViewProjects, onContact }) => {
             </div>
 
             <div className="languages-block">
-              <h2><i className="fas fa-globe"></i> LANGUES</h2>
+              <h2><i className="fas fa-globe"></i> {t('languages_section_title')}</h2>
               <div className="language-tags">
-                {personalData.languages.map((lang, index) => (
-                  <span key={index} className="language-tag">{lang}</span>
-                ))}
+                <span className="language-tag">{t('language_french_native')}</span>
+                <span className="language-tag">{t('language_english_professional')}</span>
               </div>
             </div>
 
           </div>
 
           <div className="action-buttons-section">
-           <button className="hologram-button projects" onClick={onViewProjects}>VOIR LES PROJETS</button>
-           <a 
-              href={linkedInUrl} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="hologram-button contact-button linkedin-button" 
+            <button className="hologram-button projects" onClick={onViewProjects}>{t('view_projects')}</button>
+            <a
+              href={linkedInUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hologram-button contact-button linkedin-button"
             >
-              {t('contact_me_linkedin')} <i className="fab fa-linkedin"></i> 
+              {t('contact_me_linkedin')} <i className="fab fa-linkedin"></i>
             </a>
           </div>
 
