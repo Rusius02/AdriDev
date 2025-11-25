@@ -31,7 +31,7 @@ const personalData = {
   ],
   languages: ['Français (Natif)', 'Anglais (Professionnel)'],
 };
-
+const linkedInUrl = "https://www.linkedin.com/in/adrien-sti%C3%A9venart-105361211/";
 const HomeHologram = ({ onViewProjects, onContact }) => {
   return (
     <div className="hologram-container">
@@ -94,7 +94,14 @@ const HomeHologram = ({ onViewProjects, onContact }) => {
 
           <div className="action-buttons-section">
            <button className="hologram-button projects" onClick={onViewProjects}>VOIR LES PROJETS</button>
-            <button className="hologram-button contact" onClick={onContact}>ME CONTACTER</button>
+           <a 
+              href={linkedInUrl} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hologram-button contact-button linkedin-button" 
+            >
+              {t('contact_me_linkedin')} <i className="fab fa-linkedin"></i> 
+            </a>
           </div>
 
         </div>
