@@ -1,28 +1,36 @@
 {
-
   "home_name": "ADRIEN STIÉVENART",
   "home_title_1": "Développeur et Artiste dans l'Âme",
   "home_title_2": "Bachelier en Informatique de Gestion",
-
-
   "path_section_title_1": "MON PARCOURS : L'ÉVOLUTION",
   "path_section_content_1": "Après quelques années d'études d'ingénieur en agronomie, j'ai réalisé que cette voie n'était pas faite pour moi. Mon intérêt s'est alors porté sur l'informatique, en particulier le développement web, mobile et logiciel. J'ai commencé par apprendre les bases de Java, puis j'ai complété un Bachelier en Informatique de Gestion avec succès.",
-  
   "path_section_title_2": "EXPÉRIENCE PROFESSIONNELLE : PHARMA TECH",
   "path_section_content_2": "J'ai acquis une première expérience en tant que consultant, affecté à une mission dans une société spécialisée dans le développement de solutions informatiques pour le secteur pharmaceutique.",
-  
   "path_section_title_3": "NOUVELLE AVENTURE : INDÉPENDANCE",
   "path_section_content_3": "Malgré les doutes générés par la complexité du marché de l'emploi actuel, j'ai pris la décision de me lancer dans une aventure solo pour maîtriser mes projets. Bienvenue sur mon portfolio ! N'hésitez pas à me contacter pour toute collaboration. Explorez mes réalisations ci-dessous.",
-
-
   "skills_section_title": "COMPÉTENCES TECHNIQUES",
-
   "languages_section_title": "LANGUES",
   "language_french_native": "Français (Natif)",
   "language_english_professional": "Anglais (Professionnel)",
-
-
-
   "view_projects": "VOIR LES PROJETS",
-  "contact_me_linkedin": "MON PROFIL LINKEDIN"
+  "contact_me_linkedin": "MON PROFIL LINKEDIN",
+  "projects_list_back_to_home": "Retour à l'Accueil",
+  "projects_list_title": "MES PROJETS",
+  "projects_list_subtitle": "Explorez mes réalisations techniques et artistiques.",
+  "projects_list_view_project_button": "VOIR LE PROJET",
+
+  "project_title_portfolio": "Ce Portfolio Interactif",
+  "project_description_portfolio": "Une Vitrine Technologique (React & CSS)",
+  "project_title_nisolnicole": "NisolNicole",
+  "project_description_nisolnicole": "Vitrine Littéraire & E-commerce (Vue3 & .NET)",
+  "project_title_finovo": "Finovo",
+  "project_description_finovo": "ERP Modulaire (React & FastAPI/Python)",
+  "project_title_justgaming": "JustGaming",
+  "project_description_justgaming": "Réseau Social pour Gamers (Django & HTMX)",
+  "project_title_mytasker": "MyTasker",
+  "project_description_mytasker": "Gestionnaire de Projets & Tâches (WPF)",
+  "project_title_longlove": "LongLove",
+  "project_description_longlove": "App Mobile pour Couples à Distance (React Native)",
+  "project_title_cardforge": "CardForge",
+  "project_description_cardforge": "Jeu de Cartes Personnalisable (Web)"
 }

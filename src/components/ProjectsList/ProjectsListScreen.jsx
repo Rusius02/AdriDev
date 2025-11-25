@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './ProjectsListScreen.css';
+import { useTranslation } from 'react-i18next';
 
 
 const projects = [
@@ -50,31 +51,32 @@ const projects = [
 
 const ProjectsListScreen = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const handleGoHome = () => {
-    navigate('/'); // Navigue vers la route racine (accueil)
+    navigate('/'); 
   };
-  return (
+ return (
     <div className="projects-list-container">
       <div className="projects-list-hologram-border">
         <div className="projects-list-hologram-content">
           <button className="hologram-back-button" onClick={handleGoHome}>
-            <i className="fas fa-arrow-left"></i> Retour à l'Accueil
+            <i className="fas fa-arrow-left"></i> {t('projects_list_back_to_home')} 
           </button>
-          <h1 className="projects-list-title">MES PROJETS</h1>
-          <p className="projects-list-subtitle">Explorez mes réalisations techniques et artistiques.</p>
-          
+          <h1 className="projects-list-title">{t('projects_list_title')}</h1> 
+          <p className="projects-list-subtitle">{t('projects_list_subtitle')}</p> 
+
           <div className="scan-line-separator"></div>
 
           <div className="project-cards-grid">
             {projects.map(project => (
               <Link to={`/projects/${project.id}`} key={project.id} className="project-card">
                 <div className="project-card-image-container">
-                    <img src={project.thumbnail} alt={`Aperçu de ${project.title}`} className="project-card-image" />
+                    <img src={project.thumbnail} alt={t(`project_title_${project.id}`)} className="project-card-image" />
                 </div>
-                <h2 className="project-card-title">{project.title}</h2>
-                <p className="project-card-description">{project.description}</p>
+                <h2 className="project-card-title">{t(`project_title_${project.id}`)}</h2> 
+                <p className="project-card-description">{t(`project_description_${project.id}`)}</p> 
                 <div className="project-card-action">
-                    <span className="hologram-button-small">VOIR LE PROJET <i className="fas fa-arrow-right"></i></span>
+                    <span className="hologram-button-small">{t('projects_list_view_project_button')} <i className="fas fa-arrow-right"></i></span> {/* <-- Traduit */}
                 </div>
               </Link>
             ))}
