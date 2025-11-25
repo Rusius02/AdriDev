@@ -1,0 +1,18 @@
+{
+  "home_title": "ADRIEN'S PORTFOLIO",
+  "home_subtitle": "FULL-STACK DEVELOPER & SOFTWARE ARCHITECT",
+  "view_projects": "VIEW PROJECTS",
+  "contact_me": "CONTACT ME",
+  "my_projects": "MY PROJECTS",
+  "explore_my_work": "Explore my technical and artistic achievements.",
+  "back_to_home": "Back to Home",
+  "view_project": "VIEW PROJECT",
+  "project_title_portfolio": "This Interactive Portfolio",
+  "project_subtitle_portfolio": "A Tech Showcase Built with React & Holographic CSS",
+  "project_github_repo": "PORTFOLIO GITHUB REPO",
+  "project_idea": "THE IDEA BEHIND {{projectName}}",
+  "project_vision_challenges": "VISION & TECHNICAL CHALLENGES",
+  "project_key_features": "KEY FEATURES",
+  "project_tech_stack": "TECHNOLOGY STACK",
+  "project_screenshots": "PROJECT OVERVIEWS"
+}

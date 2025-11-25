@@ -1,0 +1,18 @@
+{
+  "home_title": "PORTFOLIO ADRIEN",
+  "home_subtitle": "DÉVELOPPEUR FULL-STACK & ARCHITECTE LOGICIEL",
+  "view_projects": "VOIR LES PROJETS",
+  "contact_me": "ME CONTACTER",
+  "my_projects": "MES PROJETS",
+  "explore_my_work": "Explorez mes réalisations techniques et artistiques.",
+  "back_to_home": "Retour à l'Accueil",
+  "view_project": "VOIR LE PROJET",
+  "project_title_portfolio": "Ce Portfolio Interactif",
+  "project_subtitle_portfolio": "Une Vitrine Technologique Construite avec React & CSS Holographique",
+  "project_github_repo": "DÉPÔT GITHUB DU PORTFOLIO",
+  "project_idea": "L'IDÉE DERRIÈRE {{projectName}}",
+  "project_vision_challenges": "VISION & DÉFIS TECHNIQUES",
+  "project_key_features": "CARACTÉRISTIQUES PRINCIPALES",
+  "project_tech_stack": "PILES TECHNOLOGIQUES",
+  "project_screenshots": "APERÇUS DU PROJET"
+}
