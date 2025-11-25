@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Routes, Route, useNavigate } from 'react-router-dom'; 
-
+import LanguageSelector from './components/LanguageSelector/LanguageSelector';
 import HomeHologram from './components/HomeHologram/HomeHologram';
 import ProjectsListScreen from './components/ProjectsList/ProjectsListScreen'; 
 import MyTaskerScreen from './components/MyTasker/MyTaskerScreen';
@@ -25,6 +25,7 @@ function App() {
 
   return (
     <div className="App">
+      <LanguageSelector />
       <Routes>
         <Route path="/" element={
           <HomeHologram 
