@@ -76,6 +76,23 @@
   "finovo_roadmap_item_5": "**Personnalisation Poussée :** Un tableau de bord configurable et des rapports adaptés à chaque métier.",
   "finovo_roadmap_item_6": "**Déploiement Cloud & On-Premise :** Options de déploiement flexibles pour s'adapter aux préférences client.",
   "finovo_screenshots_title": "APERÇUS & MAQUETTES",
-  "finovo_screenshot_alt_1": "Capture d'écran du Module de Facturation"
+  "finovo_screenshot_alt_1": "Capture d'écran du Module de Facturation",
 
+  "justgaming_title": "JustGaming - Le Réseau Social pour Gamers",
+  "justgaming_subtitle": "Connecter la Communauté de Joueurs (Django/Python & HTMX)",
+  "justgaming_community_spirit_title": "L'ESPRIT COMMUNAUTAIRE",
+  "justgaming_description": "JustGaming est né de l'idée audacieuse de quatre camarades de bachelier en informatique de gestion, désireux de créer une plateforme sociale dédiée aux passionnés de jeux vidéo. L'objectif était de bâtir un espace où les gamers pourraient se retrouver, partager et surtout, trouver facilement des partenaires pour leurs sessions de jeu. C'est une réponse à l'isolement parfois ressenti dans l'univers du gaming en ligne, en offrant un hub communautaire complet.",
+  "justgaming_architecture_tech_title": "ARCHITECTURE & TECHNOLOGIES CLÉS",
+  "justgaming_objective": "Ce projet avait pour ambition de démontrer la faisabilité d'un réseau social dynamique avec des outils et des technologies efficaces. L'utilisation de Django pour le backend a permis une gestion robuste des données utilisateurs et des interactions sociales, tandis que l'intégration de HTMX sur le frontend a été un choix stratégique pour offrir une expérience utilisateur fluide et réactive, sans les complexités d'un framework JavaScript lourd.",
+  "justgaming_features_title": "FONCTIONNALITÉS ESSENTIELLES",
+  "justgaming_feature_1": "**Recherche de Partenaires de Jeu :** Système avancé pour trouver des coéquipiers basés sur les jeux, plateformes et styles de jeu.",
+  "justgaming_feature_2": "**Fil d'Actualités Dynamique :** Partage de statuts, captures d'écran, vidéos et actualités liées au gaming entre amis et communautés.",
+  "justgaming_feature_3": "**Messagerie Instantanée (Messenger Like) :** Communication privée et de groupe pour coordonner les parties et discuter.",
+  "justgaming_feature_4": "**Profils Utilisateurs Personnalisables :** Affichage des jeux favoris, des statistiques et des préférences de jeu.",
+  "justgaming_feature_5": "**Groupes et Communautés :** Création et gestion de communautés autour de jeux spécifiques ou d'intérêts communs.",
+  "justgaming_tech_stack_title": "PILES TECHNOLOGIQUES",
+  "justgaming_screenshots_title": "APERÇUS DE L'INTERFACE",
+  "justgaming_screenshot_alt_1": "Capture d'écran du Fil d'Actualités",
+  "justgaming_screenshot_alt_2": "Capture d'écran de l'accueil",
+  "justgaming_screenshot_alt_3": "Capture d'écran de la Messagerie"
 }
