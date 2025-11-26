@@ -132,5 +132,27 @@
   "mytasker_screenshots_title": "APERÇUS DE L'INTERFACE",
   "mytasker_screenshot_alt_1": "Capture d'écran de la Vue Projet",
   "mytasker_screenshot_alt_2": "Capture d'écran de la Vue Personne",
-  "mytasker_screenshot_alt_3": "Capture d'écran de la Vue Tâche"
+  "mytasker_screenshot_alt_3": "Capture d'écran de la Vue Tâche",
+
+  "nisolnicole_title": "NisolNicole - Vitrine Littéraire & E-commerce",
+  "nisolnicole_subtitle": "Plateforme Auteur Locale (Vue3 & .NET/C#)",
+  "nisolnicole_presentation_title": "PRÉSENTATION DU PROJET",
+  "nisolnicole_description": "NisolNicole est une plateforme web dédiée à une auteure locale, conçue pour présenter son œuvre littéraire au public. La première version est une vitrine élégante, offrant une immersion dans son univers et facilitant la découverte de ses écrits. Ce projet illustre la capacité à construire des applications full-stack, en alliant la réactivité du frontend Vue3 à la robustesse d'un backend .NET/C#.",
+  "nisolnicole_vision_objectives_title": "VISION & OBJECTIFS (V1 & FUTUR)",
+  "nisolnicole_objective": "L'objectif principal de la V1 était de créer une présence en ligne professionnelle pour l'auteure, en se familiarisant avec les spécificités de Vue3 pour l'interface utilisateur et en établissant une API RESTful avec .NET/C#. Les versions futures visent à transformer cette vitrine en une plateforme e-commerce complète, soulignant une approche de développement évolutive et axée sur l'expérience utilisateur.",
+  "nisolnicole_features_v1_title": "FONCTIONNALITÉS CLÉS (V1)",
+  "nisolnicole_feature_v1_1": "Page d'Accueil immersive présentant l'univers de l'auteure.",
+  "nisolnicole_feature_v1_2": "Page \"Mes Écrits\" pour découvrir les publications, avec liens externes vers les plateformes de commande de livres papier.",
+  "nisolnicole_feature_v1_3": "Page de Contact pour interagir facilement avec l'auteure.",
+  "nisolnicole_feature_v1_4": "Design Responsive assurant une expérience utilisateur fluide sur tous les appareils.",
+  "nisolnicole_feature_v1_5": "Backend .NET/C# léger pour la gestion potentielle de contenus dynamiques (prêt pour l'évolution).",
+  "nisolnicole_tech_stack_title": "TECHNOLOGIES UTILISÉES",
+  "nisolnicole_roadmap_title": "FEUILLE DE ROUTE (VERSIONS FUTURES)",
+  "nisolnicole_roadmap_item_1": "**V2 : Intégration E-commerce Complète** - Ajout d'une boutique en ligne avec gestion de catalogue et processus d'achat sécurisé via l'API Stripe.",
+  "nisolnicole_roadmap_item_2": "**V3 : Espace Communautaire** - Implémentation d'un fil d'actualité pour les annonces et événements, et d'une page \"Workshop\" pour des ateliers littéraires.",
+  "nisolnicole_roadmap_item_3": "**Optimisation SEO & Performance** - Amélioration du référencement et des performances globales du site.",
+  "nisolnicole_screenshots_title": "APERÇUS DE L'INTERFACE",
+  "nisolnicole_screenshot_alt_1": "Capture d'écran de la Page d'Accueil",
+  "nisolnicole_screenshot_alt_2": "Capture d'écran de la Page Mes Écrits",
+  "nisolnicole_screenshot_alt_3": "Capture d'écran de la Page Contact"
 }
