@@ -114,5 +114,23 @@
   "longlove_screenshot_alt_1": "Maquette de l'écran de messagerie",
   "longlove_screenshot_alt_2": "Maquette de l'écran Calendrier Partagé",
   "longlove_screenshot_alt_3": "Maquette d'un jeu de couple",
-  "longlove_screenshot_alt_4": "Maquette de la Galerie de Souvenirs"
+  "longlove_screenshot_alt_4": "Maquette de la Galerie de Souvenirs",
+
+  "mytasker_title": "MyTasker - Gestionnaire de Projets & Tâches",
+  "mytasker_subtitle": "Projet de Découverte WPF (C#)",
+  "mytasker_presentation_title": "PRÉSENTATION DU PROJET",
+  "mytasker_description": "MyTasker est une application de bureau conçue pour faciliter la gestion de projets et de tâches. Réalisé avec WPF (Windows Presentation Foundation), ce projet avait pour objectif principal d'explorer et de maîtriser les bases de cette technologie Microsoft, ouvrant ainsi la porte au développement d'applications Windows riches et performantes.",
+  "mytasker_objective_learning_title": "OBJECTIF ET APPRENTISSAGE",
+  "mytasker_objective": "L'ambition première de MyTasker était de s'immerger dans l'écosystème WPF. Il s'agissait d'apprendre à structurer une application desktop, à gérer les interactions utilisateur et à manipuler les données à travers une interface graphique moderne.",
+  "mytasker_features_title": "FONCTIONNALITÉS CLÉS",
+  "mytasker_feature_1": "Gestion des Projets : Création, Consultation, Modification et Suppression (CRUD).",
+  "mytasker_feature_2": "Gestion des Personnes : Création, Consultation, Modification et Suppression (CRUD).",
+  "mytasker_feature_3": "Gestion des Tâches : Création, Consultation, Modification et Suppression (CRUD).",
+  "mytasker_feature_4": "Assignation Intuitive : Lier des tâches à des personnes spécifiques au sein de chaque projet.",
+  "mytasker_feature_5": "Visualisation Claire : Des vues dédiées pour chaque entité afin d'organiser l'information.",
+  "mytasker_tech_stack_title": "TECHNOLOGIES UTILISÉES",
+  "mytasker_screenshots_title": "APERÇUS DE L'INTERFACE",
+  "mytasker_screenshot_alt_1": "Capture d'écran de la Vue Projet",
+  "mytasker_screenshot_alt_2": "Capture d'écran de la Vue Personne",
+  "mytasker_screenshot_alt_3": "Capture d'écran de la Vue Tâche"
 }
