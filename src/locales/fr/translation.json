@@ -154,5 +154,23 @@
   "nisolnicole_screenshots_title": "APERÇUS DE L'INTERFACE",
   "nisolnicole_screenshot_alt_1": "Capture d'écran de la Page d'Accueil",
   "nisolnicole_screenshot_alt_2": "Capture d'écran de la Page Mes Écrits",
-  "nisolnicole_screenshot_alt_3": "Capture d'écran de la Page Contact"
+  "nisolnicole_screenshot_alt_3": "Capture d'écran de la Page Contact",
+
+  "portfolio_title": "Ce Portfolio Interactif",
+  "portfolio_subtitle": "Une Vitrine Technologique Construite avec React & CSS Holographique",
+  "portfolio_genesis_title": "LA GENÈSE DU PORTFOLIO",
+  "portfolio_description": "Ce portfolio n'est pas qu'une simple collection de projets; c'est un projet à part entière, conçu pour offrir une expérience immersive et moderne. L'objectif était de créer une plateforme dynamique et visuellement distinctive, qui reflète non seulement mes compétences techniques en développement web frontend, mais aussi ma capacité à innover dans la présentation de mon travail. Inspiré par les interfaces futuristes des films de science-fiction, il adopte un thème holographique unique.",
+  "portfolio_objectives_achievements_title": "OBJECTIFS & RÉALISATIONS TECHNIQUES",
+  "portfolio_objective": "L'objectif principal était de concevoir un portfolio qui se démarque, en utilisant les dernières technologies frontend pour une performance optimale et une esthétique soignée. Les défis incluaient l'implémentation de l'effet holographique via CSS, la gestion de la navigation SPA avec React Router, l'optimisation des performances pour les animations, et la conception d'une structure de composants modulaire et maintenable. C'est une démonstration de ma maîtrise de React et de ma créativité en design d'interface.",
+  "portfolio_features_title": "FONCTIONNALITÉS CLÉS",
+  "portfolio_feature_1": "**Interface Holographique :** Design visuel unique avec des éléments translucides, des effets de lueur et des animations subtiles pour un rendu futuriste.",
+  "portfolio_feature_2": "**Navigation SPA Fluide :** Utilisation de React Router pour une expérience de navigation sans rechargement de page, rapide et intuitive.",
+  "portfolio_feature_3": "**Composants Modulaires :** Structure de code organisée en composants React réutilisables et faciles à maintenir.",
+  "portfolio_feature_4": "**Responsivité Mobile-First :** Conception adaptée à une large gamme d'appareils, des ordinateurs de bureau aux smartphones, pour une accessibilité maximale.",
+  "portfolio_feature_5": "**Intégration d'Icônes Font Awesome :** Utilisation d'une bibliothèque d'icônes pour améliorer l'esthétique et la compréhension visuelle des fonctionnalités.",
+  "portfolio_feature_6": "**Gestions des États (Hooks) :** Utilisation des hooks React pour gérer l'état des composants et les effets secondaires de manière efficace.",
+  "portfolio_tech_stack_title": "PILES TECHNOLOGIQUES",
+  "portfolio_github_button": "DÉPÔT GITHUB DU PORTFOLIO",
+  "portfolio_screenshots_title": "APERÇUS DU PORTFOLIO",
+  "portfolio_screenshot_alt_1": "Écran d'accueil du portfolio"
 }
