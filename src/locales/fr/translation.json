@@ -94,5 +94,25 @@
   "justgaming_screenshots_title": "APERÇUS DE L'INTERFACE",
   "justgaming_screenshot_alt_1": "Capture d'écran du Fil d'Actualités",
   "justgaming_screenshot_alt_2": "Capture d'écran de l'accueil",
-  "justgaming_screenshot_alt_3": "Capture d'écran de la Messagerie"
+  "justgaming_screenshot_alt_3": "Capture d'écran de la Messagerie",
+
+  "longlove_title": "LongLove - Connecter les Cœurs à Distance",
+  "longlove_subtitle": "Application Mobile pour Couples (React Native & Node.js/Firebase)",
+  "longlove_idea_title": "L'IDÉE DERRIÈRE LONGLOVE",
+  "longlove_description": "LongLove est une application mobile innovante, conçue pour renforcer les liens des couples vivant une relation à longue distance. Née de l'observation que la distance peut parfois altérer la spontanéité et la proximité, LongLove propose un espace privé et enrichi, facilitant la communication, le partage et les activités ludiques, pour que la distance ne soit plus un frein à l'amour.",
+  "longlove_vision_tech_challenges_title": "VISION & DÉFIS TECHNIQUES",
+  "longlove_objective": "L'objectif principal est de fournir une boîte à outils numérique complète pour les relations à distance. LongLove vise à recréer une intimité et une connexion émotionnelle fortes grâce à des fonctionnalités intuitives et engageantes, rendant chaque jour à distance plus doux et plus connecté. Le projet explorera les défis spécifiques du développement mobile multi-plateforme avec React Native et l'intégration de services backend pour des fonctionnalités temps réel.",
+  "longlove_features_title": "FONCTIONNALITÉS CLÉS",
+  "longlove_feature_1": "**Messagerie Enrichie :** Échange de messages textuels, vocaux, photos et vidéos dans un cadre privé et sécurisé.",
+  "longlove_feature_2": "**Calendrier Partagé :** Synchronisation des dates importantes, gestion des événements de couple et compte à rebours pour la prochaine rencontre.",
+  "longlove_feature_3": "**Activités Ludiques & Jeux de Couple :** Quiz personnalisés, défis quotidiens et espace de dessin collaboratif pour s'amuser ensemble.",
+  "longlove_feature_4": "**Galerie de Souvenirs :** Un album photo/vidéo privé et organisé pour immortaliser les moments partagés et les souvenirs précieux.",
+  "longlove_feature_5": "**Partage d'Humeur & Notifications Haptiques :** Envoyer rapidement son état d'esprit et des vibrations douces pour simuler des \"touches\" à distance.",
+  "longlove_feature_6": "**\"Love Letters\" :** Un espace dédié à l'écriture de messages intimes, conservés comme des trésors de la relation.",
+  "longlove_tech_stack_title": "TECHNOLOGIES CHOISIES",
+  "longlove_screenshots_title": "MAQUETTES CONCEPTUELLES",
+  "longlove_screenshot_alt_1": "Maquette de l'écran de messagerie",
+  "longlove_screenshot_alt_2": "Maquette de l'écran Calendrier Partagé",
+  "longlove_screenshot_alt_3": "Maquette d'un jeu de couple",
+  "longlove_screenshot_alt_4": "Maquette de la Galerie de Souvenirs"
 }
