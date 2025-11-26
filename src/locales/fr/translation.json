@@ -52,5 +52,30 @@
   "cardforge_screenshots_title": "APERÇUS DU JEU",
   "cardforge_screenshot_alt_1": "Maquette de l'éditeur de deck CardForge",
   "cardforge_screenshot_alt_2": "Maquette de l'écran de gameplay",
-  "cardforge_screenshot_alt_3": "Maquette de la gestion de collection"
+  "cardforge_screenshot_alt_3": "Maquette de la gestion de collection",
+
+  "finovo_title": "Finovo - Solutions de Gestion d'Entreprise Modulaires",
+  "finovo_subtitle": "ERP nouvelle génération (React & FastAPI/Python)",
+  "finovo_idea_title": "L'IDÉE DERRIÈRE FINOVO",
+  "finovo_description": "Finovo est une initiative visant à révolutionner les logiciels de gestion d'entreprise (ERP) actuels. Constatant une insatisfaction généralisée vis-à-vis des solutions existantes, souvent rigides et coûteuses, j'ai entrepris de développer une alternative moderne et flexible. Finovo est conçu pour s'adapter précisément aux besoins réels de chaque entreprise, sans surcharger les clients avec des fonctionnalités superflues ni des coûts injustifiés.",
+  "finovo_vision_title": "VISION & ARCHITECTURE",
+  "finovo_objective": "L'objectif principal de Finovo est de prouver qu'une solution ERP complète peut être modulaire, performante et personnalisable. La priorité initiale est le développement d'un module de facturation robuste, capable de générer des factures au format XML compatible Peppol. À terme, Finovo ambitionne de devenir un ERP complet, évolutif et économique, basé sur une architecture de microservices.",
+  "finovo_features_title": "FONCTIONNALITÉS PRIORITAIRES",
+  "finovo_feature_1": "**Facturation Avancée :** Création et gestion de factures, devis et avoirs.",
+  "finovo_feature_2": "**Compatibilité Peppol :** Génération de factures au format XML standardisé pour les échanges européens.",
+  "finovo_feature_3": "**Architecture Microservices :** Chaque module est indépendant, garantissant flexibilité, scalabilité et résilience.",
+  "finovo_feature_4": "**Interface Utilisateur Intuitive :** Frontend développé avec React pour une expérience utilisateur moderne et réactive.",
+  "finovo_feature_5": "**API Robuste :** Backend construit avec FastAPI (Python) pour des performances élevées et une documentation API automatique.",
+  "finovo_tech_stack_title": "TECHNOLOGIES CLÉS",
+  "project_github_button": "VOIR SUR GITHUB",
+  "finovo_roadmap_title": "FEUILLE DE ROUTE & MODULES FUTURS",
+  "finovo_roadmap_item_1": "**Gestion de la Relation Client (CRM) :** Suivi des prospects, clients, et gestion des opportunités commerciales.",
+  "finovo_roadmap_item_2": "**Gestion des Stocks & Logistique :** Optimisation des inventaires, suivi des flux de marchandises et gestion des entrepôts.",
+  "finovo_roadmap_item_3": "**Comptabilité & Finance :** Module complet pour la tenue des comptes, le suivi budgétaire et les rapports financiers.",
+  "finovo_roadmap_item_4": "**Ressources Humaines (RH) :** Gestion des employés, des congés, des fiches de paie et du recrutement.",
+  "finovo_roadmap_item_5": "**Personnalisation Poussée :** Un tableau de bord configurable et des rapports adaptés à chaque métier.",
+  "finovo_roadmap_item_6": "**Déploiement Cloud & On-Premise :** Options de déploiement flexibles pour s'adapter aux préférences client.",
+  "finovo_screenshots_title": "APERÇUS & MAQUETTES",
+  "finovo_screenshot_alt_1": "Capture d'écran du Module de Facturation"
+
 }
