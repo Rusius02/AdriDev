@@ -11,6 +11,7 @@ import JustGamingScreen from './components/JustGaming/JustGamingScreen';
 import LongLoveScreen from './components/LongLove/LongLoveScreen';
 import CardForgeScreen from './components/CardForge/CardForgeScreen';
 import PortfolioScreen from './components/this/this'; 
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   const navigate = useNavigate(); 
@@ -26,6 +27,7 @@ function App() {
   return (
     <div className="App">
       <LanguageSelector />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={
           <HomeHologram 
