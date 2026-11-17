@@ -12,6 +12,7 @@ import LongLoveScreen from './components/LongLove/LongLoveScreen';
 import CardForgeScreen from './components/CardForge/CardForgeScreen';
 import PortfolioScreen from './components/this/this';
 import ScrollToTop from './components/ScrollToTop';
+import SeoMetadata from './components/SeoMetadata';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import './professional.css';
 
@@ -24,6 +25,7 @@ function App() {
     <div className="App">
       <LanguageSelector />
       <ScrollToTop />
+      <SeoMetadata />
       <Routes>
         <Route path="/" element={
           <HomeHologram 
