@@ -1,104 +1,95 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './HomeHologram.css';
-import { useTranslation } from 'react-i18next'; 
 
-const linkedInUrl = "https://www.linkedin.com/in/adrien-sti%C3%A9venart-105361211/";
+const linkedInUrl = 'https://www.linkedin.com/in/adrien-sti%C3%A9venart-105361211/';
+const githubUrl = 'https://github.com/Rusius02';
 
-const HomeHologram = ({ onViewProjects }) => { 
-  const { t } = useTranslation(); 
-const personalData = {
-  technologies: [
-    { name: 'React', xp: 70 },
-    { name: 'Angular', xp: 50 },
-    { name: 'Vue3', xp: 70 },
-    { name: 'Java', xp: 90 },
-    { name: '.NET / C#', xp: 75 },
-    { name: 'C / C++', xp: 25 },
-    { name: 'HTML/CSS', xp: 85 },
-    { name: 'Python', xp: 75 },
-    { name: 'VBA', xp: 65 },
-  ],
-};
+const technologies = [
+  'Java',
+  'C# / .NET',
+  'JavaScript',
+  'React',
+  'Vue 3',
+  'Python',
+  'Flutter',
+  'SQLite',
+];
+
+const HomeHologram = ({ onViewProjects }) => {
+  const { t } = useTranslation();
+
   return (
-    <div className="hologram-container">
-      <div className="hologram-border">
-        <div className="hologram-content">
+    <main className="home-shell">
+      <header className="site-header">
+        <a className="site-brand" href="/" aria-label={t('home_name')}>
+          <span className="site-brand-mark">AS</span>
+          <span>{t('home_name')}</span>
+        </a>
+        <nav className="site-navigation" aria-label={t('main_navigation')}>
+          <button className="text-link" onClick={onViewProjects}>{t('view_projects')}</button>
+          <a className="text-link" href={githubUrl} target="_blank" rel="noopener noreferrer">GitHub</a>
+        </nav>
+      </header>
 
-          <div className="header-section">
-            <div className="profile-image-container">
-              <img src="/profile-adrien.jpg" alt={t('home_name')} className="profile-image" />
-            </div>
-            <div className="text-header-content">
-                <h1 className="main-title">{t('home_name')}</h1>
-                <div className="titles-block">
-                    <p className="subtitle">{t('home_title_1')}</p>
-                    <p className="subtitle">{t('home_title_2')}</p>
-                </div>
-            </div>
-          </div>
-
-          <div className="scan-line-separator"></div>
-          <div className="parcours-section">
-            <div className="parcours-block">
-                <h3>{t('path_section_title_1')}</h3>
-                <p className="parcours-content">{t('path_section_content_1')}</p>
-            </div>
-            <div className="parcours-block">
-                <h3>{t('path_section_title_2')}</h3>
-                <p className="parcours-content">{t('path_section_content_2')}</p>
-            </div>
-            <div className="parcours-block">
-                <h3>{t('path_section_title_3')}</h3>
-                <p className="parcours-content">{t('path_section_content_3')}</p>
-            </div>
-          </div>
-          <div className="scan-line-separator"></div>
-
-          <div className="skills-and-lang-section">
-
-            <div className="skills-block">
-              <h2><i className="fas fa-microchip"></i> {t('skills_section_title')}</h2>
-              <div className="tech-list">
-                {/* Les noms de techs (React, Angular...) restent les mêmes, mais les XP peuvent être affichés */}
-                {/* ... (votre code existant pour les technologies) ... */}
-                {personalData.technologies.map((tech, index) => (
-                  <div key={index} className="tech-item">
-                    <span className="tech-name">{tech.name}</span>
-                    <div className="xp-bar-container">
-                      <div className="xp-bar-fill" style={{ width: `${tech.xp}%` }}>
-                        <span className="xp-percent">{tech.xp}%</span>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="languages-block">
-              <h2><i className="fas fa-globe"></i> {t('languages_section_title')}</h2>
-              <div className="language-tags">
-                <span className="language-tag">{t('language_french_native')}</span>
-                <span className="language-tag">{t('language_english_professional')}</span>
-              </div>
-            </div>
-
-          </div>
-
-          <div className="action-buttons-section">
-            <button className="hologram-button projects" onClick={onViewProjects}>{t('view_projects')}</button>
-            <a
-              href={linkedInUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hologram-button contact-button linkedin-button"
-            >
-              {t('contact_me_linkedin')} <i className="fab fa-linkedin"></i>
+      <section className="hero-section">
+        <div className="hero-copy">
+          <p className="eyebrow"><span className="availability-dot" />{t('home_eyebrow')}</p>
+          <h1>{t('home_title_1')}</h1>
+          <p className="hero-subtitle">{t('home_title_2')}</p>
+          <p className="hero-description">{t('home_intro')}</p>
+          <div className="hero-actions">
+            <button className="button button-primary" onClick={onViewProjects}>
+              {t('view_projects')} <span aria-hidden="true">&rarr;</span>
+            </button>
+            <a className="button button-secondary" href={linkedInUrl} target="_blank" rel="noopener noreferrer">
+              {t('contact_me_linkedin')}
             </a>
           </div>
-
         </div>
-      </div>
-    </div>
+        <div className="hero-profile">
+          <div className="profile-image-frame">
+            <img src="/profile-adrien.jpg" alt={t('home_name')} className="profile-image" />
+          </div>
+          <p className="profile-caption">{t('profile_caption')}</p>
+        </div>
+      </section>
+
+      <section className="professional-section" aria-labelledby="experience-heading">
+        <div className="section-heading">
+          <p className="eyebrow">{t('experience_eyebrow')}</p>
+          <h2 id="experience-heading">{t('experience_heading')}</h2>
+        </div>
+        <div className="experience-grid">
+          {[1, 2, 3].map((item) => (
+            <article className="experience-card" key={item}>
+              <span className="experience-number">0{item}</span>
+              <h3>{t(`path_section_title_${item}`)}</h3>
+              <p>{t(`path_section_content_${item}`)}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="expertise-section" aria-labelledby="expertise-heading">
+        <div className="section-heading">
+          <p className="eyebrow">{t('skills_section_title')}</p>
+          <h2 id="expertise-heading">{t('expertise_heading')}</h2>
+        </div>
+        <div className="technology-list">
+          {technologies.map((technology) => <span className="technology-pill" key={technology}>{technology}</span>)}
+        </div>
+        <div className="language-list">
+          <span>{t('language_french_native')}</span>
+          <span>{t('language_english_professional')}</span>
+        </div>
+      </section>
+
+      <footer className="site-footer">
+        <span>{t('footer_text')}</span>
+        <a href={linkedInUrl} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </footer>
+    </main>
   );
 };
 

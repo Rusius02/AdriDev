@@ -1,0 +1,174 @@
+.project-screen-container {
+  width: min(1120px, calc(100% - 48px));
+  margin: 48px auto;
+  position: relative;
+}
+
+.project-hologram-border {
+  padding: clamp(20px, 4vw, 48px);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 12px 40px rgba(22, 38, 53, 0.06);
+  animation: none;
+}
+
+.project-hologram-content {
+  padding: 0;
+  color: var(--ink);
+  line-height: 1.7;
+}
+
+.scan-line-separator {
+  height: 1px;
+  margin: 30px 0;
+  background: var(--line);
+  box-shadow: none;
+}
+
+.hologram-close-button {
+  top: 16px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--ink-soft);
+  box-shadow: none;
+}
+
+.hologram-close-button:hover {
+  background: #f0f3f2;
+  color: var(--ink);
+  box-shadow: none;
+}
+
+.project-title {
+  color: var(--ink);
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: -0.05em;
+  text-shadow: none;
+}
+
+.project-subtitle {
+  color: var(--muted);
+}
+
+.project-details,
+.features-tech-section {
+  gap: 18px;
+}
+
+.description-block,
+.objective-block,
+.features-block,
+.tech-used-block {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfcfb;
+}
+
+.project-details h3,
+.features-block h3,
+.tech-used-block h3,
+.screenshots-section h3,
+.roadmap-section h3 {
+  border-left: 0;
+  padding-left: 0;
+  color: var(--ink);
+  font-size: 1.1rem;
+  text-transform: none;
+}
+
+.project-details h3 i,
+.features-block h3 i,
+.tech-used-block h3 i,
+.screenshots-section h3 i,
+.roadmap-section h3 i {
+  color: var(--accent);
+}
+
+.project-details p,
+.features-block li,
+.project-hologram-content,
+.roadmap-section li {
+  color: var(--ink-soft);
+}
+
+.features-block ul,
+.roadmap-section ul {
+  padding-left: 20px;
+}
+
+.features-block li,
+.roadmap-section li {
+  margin-bottom: 10px;
+}
+
+.features-block li i {
+  color: var(--accent);
+}
+
+.tech-tag {
+  padding: 7px 11px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: #f0f3f2;
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  text-transform: none;
+}
+
+.github-button {
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  background: var(--accent);
+  color: white;
+  box-shadow: none;
+}
+
+.github-button:hover {
+  background: var(--accent-dark);
+  box-shadow: none;
+}
+
+.project-screenshot {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 8px 26px rgba(22, 38, 53, 0.1);
+}
+
+.nav-button {
+  color: var(--accent);
+}
+
+.dot {
+  background: var(--line-strong);
+}
+
+.dot.active {
+  background: var(--accent);
+  box-shadow: none;
+}
+
+.project-hologram-content .scan-line-separator {
+  background: var(--line);
+}
+
+@media (max-width: 600px) {
+  .project-screen-container {
+    width: calc(100% - 28px);
+    margin: 30px auto;
+  }
+
+  .project-hologram-border {
+    padding: 22px 16px;
+  }
+
+  .hologram-close-button {
+    top: 8px;
+    right: 8px;
+  }
+}

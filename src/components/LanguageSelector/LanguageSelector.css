@@ -1,61 +1,45 @@
-/* src/components/LanguageSelector/LanguageSelector.css */
-
 .language-selector {
-  position: absolute; /* Pour le placer librement */
-  top: 20px; /* À ajuster pour votre design */
-  right: 20px; /* À ajuster pour votre design */
-  z-index: 1000; /* Assurez-vous qu'il est au-dessus de tout */
+  position: fixed;
+  top: 16px;
+  right: max(20px, calc((100vw - 1120px) / 2));
+  z-index: 20;
   display: flex;
-  gap: 5px; /* Espacement entre les boutons */
-  background-color: rgba(0, 0, 0, 0.4); /* Fond semi-transparent */
-  padding: 8px;
+  gap: 3px;
+  padding: 5px;
+  border: 1px solid var(--line);
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 224, 255, 0.4); /* Petite lueur holographique */
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 4px 14px rgba(22, 38, 53, 0.06);
 }
 
 .language-selector button {
-  background-color: transparent;
-  border: 1px solid rgba(0, 224, 255, 0.5); /* Bordure holographique */
-  color: #fff;
-  padding: 6px 10px;
+  min-width: 34px;
+  min-height: 30px;
+  padding: 4px 6px;
+  border: 0;
   border-radius: 5px;
+  background: transparent;
+  color: var(--ink-soft);
+  font: inherit;
   cursor: pointer;
-  font-size: 0.9em;
-  font-weight: bold;
-  transition: all 0.2s ease;
-  display: flex;
-  align-items: center;
-  gap: 5px;
+  transition: background-color 150ms ease, color 150ms ease;
 }
 
-.language-selector button:hover {
-  background-color: rgba(0, 224, 255, 0.1);
-  box-shadow: 0 0 10px rgba(0, 224, 255, 0.6);
-  transform: translateY(-1px);
-}
-
+.language-selector button:hover,
 .language-selector button.active {
-  background-color: var(--hologram-color, #00e0ff); /* Couleur pleine pour la langue active */
-  color: #000; /* Texte noir sur fond actif */
-  box-shadow: 0 0 15px var(--hologram-color, #00e0ff);
-  border-color: var(--hologram-color, #00e0ff);
+  background: #eaf1ef;
+  color: var(--accent);
 }
 
 .flag-icon {
-  font-size: 1.2em; /* Taille des emojis drapeaux */
-  line-height: 1; /* Assure un bon alignement vertical */
+  font-size: 1rem;
+  line-height: 1;
 }
 
-/* Media Queries pour la responsivité si nécessaire */
-@media (max-width: 600px) {
+@media (max-width: 760px) {
   .language-selector {
-    top: 10px;
-    right: 10px;
-    padding: 5px;
-    gap: 3px;
-  }
-  .language-selector button {
-    padding: 4px 8px;
-    font-size: 0.8em;
+    position: absolute;
+    top: 15px;
+    right: 12px;
   }
 }
