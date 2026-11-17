@@ -1,28 +1,24 @@
 import React from 'react';
 import './App.css';
-import { Routes, Route, useNavigate } from 'react-router-dom'; 
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import LanguageSelector from './components/LanguageSelector/LanguageSelector';
 import HomeHologram from './components/HomeHologram/HomeHologram';
-import ProjectsListScreen from './components/ProjectsList/ProjectsListScreen'; 
+import ProjectsListScreen from './components/ProjectsList/ProjectsListScreen';
 import MyTaskerScreen from './components/MyTasker/MyTaskerScreen';
 import NisolNicoleScreen from './components/NisolNicole/NisolNicoleScreen';
 import FinovoScreen from './components/Finovo/FinovoScreen';
 import JustGamingScreen from './components/JustGaming/JustGamingScreen';
 import LongLoveScreen from './components/LongLove/LongLoveScreen';
 import CardForgeScreen from './components/CardForge/CardForgeScreen';
-import PortfolioScreen from './components/this/this'; 
+import PortfolioScreen from './components/this/this';
 import ScrollToTop from './components/ScrollToTop';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import './professional.css';
 
 function App() {
   const navigate = useNavigate(); 
 
-  const handleViewProjects = () => {
-    navigate('/projects'); 
-  };
-
-  const handleContact = () => {
-    alert('Contactez-moi ! (Fonctionnalité à implémenter)');
-  };
+  const handleViewProjects = () => navigate('/projects');
 
   return (
     <div className="App">
@@ -31,8 +27,7 @@ function App() {
       <Routes>
         <Route path="/" element={
           <HomeHologram 
-            onViewProjects={handleViewProjects} 
-            onContact={handleContact} 
+            onViewProjects={handleViewProjects}
           />
         } />
 

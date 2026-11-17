@@ -18,7 +18,7 @@ const LongLoveScreen = ({ onClose }) => {
       t('longlove_feature_5'),
       t('longlove_feature_6'),
     ],
-    technologies: ['React Native', 'Node.js (Express/Firebase)', 'WebSockets (Socket.IO)', 'MongoDB/PostgreSQL', 'JavaScript'],
+    technologies: ['Flutter', 'Node.js', 'Firebase', 'Gemini', 'Google Mobile Ads'],
     githubLink: 'https://github.com/Rusius02/LongLove',
     screenshots: [
       { src: '/images/LongLove/messaging.png', alt: t('longlove_screenshot_alt_1') },
@@ -78,7 +78,7 @@ const LongLoveScreen = ({ onClose }) => {
             <h3><i className="fas fa-gift-heart"></i> {t('longlove_features_title')}</h3>
             <ul>
               {projectData.features.map((feature, index) => (
-                <li key={index} dangerouslySetInnerHTML={{ __html: feature }}></li>
+                <li key={index}>{feature}</li>
               ))}
             </ul>
           </div>
